@@ -107,6 +107,6 @@ final_output = {
     "results": results
 }
 
-with open('results/mscoco_result.json', 'w') as f:
+with open('results/mscoco_blip_result.json', 'w') as f:
     json.dump(final_output, f, indent=2, ensure_ascii=False)
 
