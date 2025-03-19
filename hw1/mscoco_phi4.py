@@ -28,7 +28,7 @@ model = AutoModelForCausalLM.from_pretrained(
     model_path,
     trust_remote_code=True,
     torch_dtype=torch.bfloat16,
-    # _attn_implementation="eager"
+    _attn_implementation="flash_attention_2"
 ).to(device)
 
 generation_config = GenerationConfig.from_pretrained(model_path)
