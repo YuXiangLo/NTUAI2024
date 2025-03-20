@@ -1,5 +1,0 @@
-mscoco_blip: 
-Corpus BLEU: 0.2422
-Average ROUGE-1: 0.4172
-Average ROUGE-2: 0.1667
-Average METEOR: 0.2584

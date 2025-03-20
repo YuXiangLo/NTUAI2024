@@ -14,8 +14,10 @@ bleu = evaluate.load("bleu")
 rouge = evaluate.load("rouge")
 meteor = evaluate.load("meteor")
 
+filename = 'results/flickr_blip_result.json'
+
 # Load JSON results
-with open('results/mscoco_phi4_result.json', 'r') as f:
+with open(filename, 'r') as f:
     data = json.load(f)
 
 # Extract and preprocess references and predictions
@@ -24,23 +26,32 @@ all_predictions = [preprocess_text(item['generated_caption']) for item in data['
 
 # Recompute metrics
 bleu_score = bleu.compute(predictions=all_predictions, references=all_references)
-rouge_scores = rouge.compute(predictions=all_predictions, references=[r[0] for r in all_references])
-meteor_score = meteor.compute(predictions=all_predictions, references=[r[0] for r in all_references])
+
+rouge1_scores = 0
+rouge2_scores = 0
+meteor_score = 0
+for i in range(len(all_references[0])):
+    rouge1_scores += rouge.compute(predictions=all_predictions, references=[r[i] for r in all_references])['rouge1']
+    rouge2_scores += rouge.compute(predictions=all_predictions, references=[r[i] for r in all_references])['rouge2']
+    meteor_score += meteor.compute(predictions=all_predictions, references=[r[i] for r in all_references])['meteor']
+rouge1_scores /= len(all_references[0])
+rouge2_scores /= len(all_references[0])
+meteor_score /= len(all_references[0])
 
 # Print updated results
 print(f"Corpus BLEU: {bleu_score['bleu']:.4f}")
-print(f"ROUGE-1: {rouge_scores['rouge1']:.4f}")
-print(f"ROUGE-2: {rouge_scores['rouge2']:.4f}")
-print(f"METEOR: {meteor_score['meteor']:.4f}")
+print(f"ROUGE-1: {rouge1_scores:.4f}")
+print(f"ROUGE-2: {rouge2_scores:.4f}")
+print(f"METEOR: {meteor_score:.4f}")
 
 # Update JSON with new results
 data.update({
     "corpus_bleu": bleu_score['bleu'],
-    "rouge1": rouge_scores['rouge1'],
-    "rouge2": rouge_scores['rouge2'],
-    "meteor": meteor_score['meteor']
+    "average_rouge1": rouge1_scores,
+    "average_rouge2": rouge2_scores,
+    "average_meteor": meteor_score
 })
 
 # Save updated JSON
-with open('results/mscoco_phi4_updated_result.json', 'w') as f:
+with open(filename, 'w') as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
