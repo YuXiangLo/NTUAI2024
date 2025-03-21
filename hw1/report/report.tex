@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+% Use geometry to control margin sizes
+\usepackage[top=0.5in, bottom=0.5in, left=1in, right=1in]{geometry}
+
+\usepackage{array}
+\usepackage{color}
+\usepackage{booktabs}
+
+% Title, Author, and Date
+\title{NTU AI 2024 HW1 Report}
+\author{B10902037 Yu Xiang Luo}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Task 1}
+
+\begin{enumerate}
+    \item Briefly describe how you implement the two models: \\
+		\\
+		In this assignment, I utilize the huggingface packages to conduct the experiments. Below is the main package I use:
+        \begin{itemize}
+            \item \textcolor{blue}{\texttt{transformer.AutoModel...}} $\rightarrow$ Load models.
+            \item \textcolor{blue}{\texttt{datasets.load\_dataset}} $\rightarrow$ Load datasets.
+            \item \textcolor{blue}{\texttt{torch.utils.data.DataLoader}} $\rightarrow$ Process data in batch to inference faster.
+			\item \textcolor{blue}{\texttt{evaluate}} $\rightarrow$ Corpus BLEU, ROUGE, and METEOR function.
+        \end{itemize}
+		Also, I convert the captions to lowercase and remove punctuations for better evaluations.
+    \item Metrics Result:
+        \begin{table}[ht]
+        \centering
+        \begin{tabular}{l cccc cccc}
+        \toprule
+         & \multicolumn{4}{c}{MSCOCO-Test} & \multicolumn{4}{c}{flickr30k}\\
+        \cmidrule(lr){2-5} \cmidrule(lr){6-9}
+         & BLEU & ROUGE-1 & ROUGE-2 & METEOR & BLEU & ROUGE-1 & ROUGE-2 & METEOR \\
+        \midrule
+        BLIP  & 0.3237 & 0.4023 & 0.1594 & 0.2776 & 0.2398 & 0.3206 & 0.1091 & 0.2033 \\
+        Phi-4 & 0.2560 & 0.3971 & 0.1517 & 0.3325 & 0.2658 & 0.3636 & 0.1400 & 0.3043 \\
+        \bottomrule
+        \end{tabular}
+        \end{table}
+	\item Analysis:
+	\begin{itemize}
+		\item In the MSCOCO experiments, BLIP outperforms Phi-4 on BLEU metrics but is outperformed by Phi-4 on METEOR. This suggests that BLIP's output aligns more closely with the specific wording used by MSCOCO annotators, leading to higher BLEU scores. In contrast, Phi-4, as a larger model, likely generates captions with a more diverse vocabulary, improving its METEOR score by capturing broader semantic similarities.
+		
+		\item In the Flickr30k experiments, Phi-4 outperforms BLIP across all metrics, indicating that Phi-4 is more effective for this dataset.
+
+		\item Comparing the two datasets, we observe that the overall metric scores are higher for MSCOCO, suggesting differences in dataset complexity, with MSCOCO potentially being easier for models to perform well on.
+	\end{itemize}
+	\end{enumerate}
+
+\end{document}
+
