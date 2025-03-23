@@ -1,0 +1,405 @@
+[
+  {
+    "prompt": "<|user|><|image_1|>Carefully caption the image as more detail as possible.<|end|><|assistant|>"
+  },
+  {
+    "image_name": "000001.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair that is light brown in color. The hair is styled in a way that it falls over the shoulders. The person is wearing a pair of earrings, which are visible on the right side of the image. The background appears to be a wall with a decorative element, possibly a mirror or a framed picture, on the right side."
+  },
+  {
+    "image_name": "000002.jpg",
+    "generated_caption": "The image shows a person with red hair tied up in a bun. The person is wearing a light-colored top with a pattern. The background appears to be an outdoor setting with some people and buildings visible."
+  },
+  {
+    "image_name": "000003.jpg",
+    "generated_caption": "The image shows a person with short, dark hair. The person is wearing a dark-colored shirt. The background appears to be outdoors with a blurred view of a landscape, possibly a field or a park. The lighting suggests it might be daytime."
+  },
+  {
+    "image_name": "000004.jpg",
+    "generated_caption": "The image shows a person with long, dark hair that is styled in a way that it appears to be wet or shiny. The person is wearing a black top, and there is a visible earring on the left ear. The background is dark, making it difficult to discern any additional details."
+  },
+  {
+    "image_name": "000005.jpg",
+    "generated_caption": "The image shows a person with a hairstyle that appears to be a modern, voluminous updo. The hair is light in color, possibly blonde, and is styled in a way that it stands up and away from the face. The background is a solid light blue color with a large white letter 'J' prominently displayed. The person's face is not visible in the image."
+  },
+  {
+    "image_name": "000006.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair. The hair is light brown and appears to be styled in loose curls. The person is wearing a black top, and the background is plain and light-colored."
+  },
+  {
+    "image_name": "000007.jpg",
+    "generated_caption": "The image shows a person with short, dark hair and a slight stubble. The person is wearing a gray shirt and is standing in front of a background with a logo that appears to be a stylized 'M' with a red and gold design. The person is looking directly at the camera with a neutral expression."
+  },
+  {
+    "image_name": "000008.jpg",
+    "generated_caption": "The image shows a man with short, dark hair and a serious expression. He is wearing a black suit jacket over a white shirt. The background is black with some text in pink and white. The text appears to be part of a logo or branding, but it is not fully visible."
+  },
+  {
+    "image_name": "000009.jpg",
+    "generated_caption": "The image shows a person with long, dark hair styled in a high ponytail. The person is wearing a patterned scarf around their neck and a pair of gold earrings. The background appears to be a blurred indoor setting with warm lighting."
+  },
+  {
+    "image_name": "000010.jpg",
+    "generated_caption": "The image shows a person with blonde hair. The hair is styled in loose waves and falls over the shoulders. The person is wearing a red top, and the background is dark with some light spots."
+  },
+  {
+    "image_name": "000011.jpg",
+    "generated_caption": "The image shows a person with long, dark hair. The hair is styled in a way that it falls over the shoulders. The person is wearing a dark-colored top. The background is plain and light-colored."
+  },
+  {
+    "image_name": "000012.jpg",
+    "generated_caption": "The image shows a person with short, dark hair and a slight smile. The person is wearing a dark suit jacket over a white shirt. The background is a plain, dark color."
+  },
+  {
+    "image_name": "000013.jpg",
+    "generated_caption": "The image shows a person with short, light-colored hair. The person is wearing a green and yellow sports jacket. The background appears to be a stadium or sports arena with some indistinct figures and structures."
+  },
+  {
+    "image_name": "000014.jpg",
+    "generated_caption": "The image shows a person with short, curly hair tied up in a bun. The person is wearing a black top and a gold necklace. The background appears to be a hallway with a door and some lighting."
+  },
+  {
+    "image_name": "000015.jpg",
+    "generated_caption": "The image shows a man with short, dark hair styled in a modern, slicked-back manner. He is wearing a blue suit jacket over a white dress shirt and a dark tie. The background appears to be an outdoor setting with some blurred structures, possibly indicating a public or formal event. The man has a serious expression on his face."
+  },
+  {
+    "image_name": "000016.jpg",
+    "generated_caption": "The image shows a man with short, dark hair and a slight smile. He is wearing a dark-colored shirt. The background appears to be an indoor setting with some indistinct objects and possibly other people."
+  },
+  {
+    "image_name": "000017.jpg",
+    "generated_caption": "The image shows a person holding a medal. The medal is red and white, and the person is wearing a red outfit. The background is a light blue color."
+  },
+  {
+    "image_name": "000018.jpg",
+    "generated_caption": "The image shows a person with blonde hair wearing a leopard print scarf around their neck. The person is also wearing earrings and has a background that appears to be a white wall with some text partially visible."
+  },
+  {
+    "image_name": "000019.jpg",
+    "generated_caption": "The image shows a person with long, wavy blonde hair. The background appears to be an outdoor setting with some greenery. The person is wearing a patterned top."
+  },
+  {
+    "image_name": "000020.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair and a beard. The person is wearing a dark-colored shirt with a pattern. The background is dark, and the person appears to be in a stage or performance setting."
+  },
+  {
+    "image_name": "000021.jpg",
+    "generated_caption": "The image shows a man with short, light-colored hair, wearing a dark suit and tie. He appears to be in a formal setting, possibly an office or a meeting room, with a blue background. The man is smiling and looking directly at the camera."
+  },
+  {
+    "image_name": "000022.jpg",
+    "generated_caption": "The image shows a person with blonde hair wearing a bright yellow top. The background is plain and light-colored."
+  },
+  {
+    "image_name": "000023.jpg",
+    "generated_caption": "The image shows a person with short, dark hair, wearing a blue and yellow racing suit. The background appears to be a blurred image of a racing track or a similar setting. The person is smiling and looking directly at the camera."
+  },
+  {
+    "image_name": "000024.jpg",
+    "generated_caption": "The image shows a person with blonde hair. The background is a mix of blue and orange colors. The person is wearing a sleeveless top."
+  },
+  {
+    "image_name": "000025.jpg",
+    "generated_caption": "The image shows a man with short, light brown hair and a light beard. He has a serious expression on his face and is looking directly at the camera. He is wearing a dark jacket over a light-colored shirt. The background appears to be a plain, light-colored wall."
+  },
+  {
+    "image_name": "000026.jpg",
+    "generated_caption": "The image shows a person with long, dark hair standing in front of a wall. The wall has some red marks or stains on it. The person is wearing a white shirt. In the background, there are buildings and a person walking."
+  },
+  {
+    "image_name": "000027.jpg",
+    "generated_caption": "The image shows a person with long, dark hair. The hair is styled in a way that it falls over the shoulders. The person is wearing a red top. The background is a plain, dark color."
+  },
+  {
+    "image_name": "000028.jpg",
+    "generated_caption": "The image shows a person with shoulder-length, wavy hair. The hair is light brown and appears to be styled in loose waves. The background is a light color, possibly white or light gray, with vertical lines that could be part of a curtain or a wall. The person is wearing a purple top."
+  },
+  {
+    "image_name": "000029.jpg",
+    "generated_caption": "The image shows a woman with blonde hair and bangs. She is wearing a black top and has a serious expression on her face. The background has a red and white logo with the text 'M' and 'MGM'."
+  },
+  {
+    "image_name": "000030.jpg",
+    "generated_caption": "The image shows a person with short, light-colored hair. The person is wearing a dark-colored shirt. The background appears to be a wooden wall."
+  },
+  {
+    "image_name": "000031.jpg",
+    "generated_caption": "The image shows a person with a blurred face, wearing a black jacket with a white logo on the left side. The background appears to be a decorative wall with intricate designs."
+  },
+  {
+    "image_name": "000032.jpg",
+    "generated_caption": "The image shows a person with short, light-colored hair, wearing a dark suit, white shirt, and a red tie. The background is blue with some text and logos, but the text is not fully legible."
+  },
+  {
+    "image_name": "000033.jpg",
+    "generated_caption": "The image shows a man with short, dark hair and a slight smile. He is wearing a black suit jacket over a white dress shirt. The background appears to be a dark, possibly black, wall with some text and a palm tree design. The text is partially visible and reads 'HOLLYWOOD'."
+  },
+  {
+    "image_name": "000034.jpg",
+    "generated_caption": "The image shows a person with long, wavy brown hair. The hair is styled in a way that it falls over the shoulders. The person is wearing a dark-colored top. The background is a plain, neutral color."
+  },
+  {
+    "image_name": "000035.jpg",
+    "generated_caption": "The image shows a person with long, dark hair. The hair is styled in a way that it appears to be slightly messy or tousled. The person is wearing a black top, and the background is a solid green color. The lighting in the image is even, highlighting the person's features and hair."
+  },
+  {
+    "image_name": "000036.jpg",
+    "generated_caption": "The image shows a person with short, dark hair, wearing a white shirt. The person is holding a microphone, suggesting they might be speaking or singing. The background is blurred, indicating the focus is on the person."
+  },
+  {
+    "image_name": "000037.jpg",
+    "generated_caption": "The image shows a person wearing a black cap with a logo on it. The person is also wearing a grayish uniform, which appears to be a military or sports uniform. The background is blurred, suggesting the photo was taken in a stadium or an outdoor setting."
+  },
+  {
+    "image_name": "000038.jpg",
+    "generated_caption": "The image shows a man with short, dark hair and a slight smile. He is wearing a dark-colored shirt. In the background, there is a blurred text that appears to be 'PEOPLE' and 'BIC'."
+  },
+  {
+    "image_name": "000039.jpg",
+    "generated_caption": "The image shows a person with dark hair, wearing a white and yellow outfit. The person appears to be in a stadium or sports arena, as there are blurred lights and spectators in the background. The person is smiling and has a confident expression."
+  },
+  {
+    "image_name": "000040.jpg",
+    "generated_caption": "The image shows a person with dark hair styled in an updo. The person is wearing large, dangling earrings and a dark-colored top. The background is a plain, light-colored wall."
+  },
+  {
+    "image_name": "000041.jpg",
+    "generated_caption": "The image shows a person with long, dark hair that is styled in a braid. The person is wearing a black shirt and has a pair of sunglasses resting on their head. The background appears to be blurred, with some orange and white colors visible."
+  },
+  {
+    "image_name": "000042.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair that is light brown in color. The person is wearing a black outfit with a high neckline. The background is a solid orange color with a subtle pattern. The person is wearing earrings and has a neutral expression on their face."
+  },
+  {
+    "image_name": "000043.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair. The person is wearing earrings and has a neutral expression on their face. The background is blurred, but it appears to be a formal event or gathering."
+  },
+  {
+    "image_name": "000044.jpg",
+    "generated_caption": "The image shows a person with curly hair, wearing a pink top. The person is surrounded by a large number of pink flowers, which appear to be gerbera daisies. The flowers are arranged in a way that they form a sort of halo around the person's head. The background is a plain, light-colored wall."
+  },
+  {
+    "image_name": "000045.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair that is a mix of brown and blonde colors. The person is wearing a dark-colored top. The background appears to be a blue and white banner with some text, but the text is not fully legible."
+  },
+  {
+    "image_name": "000046.jpg",
+    "generated_caption": "The image shows a person with long, dark hair styled in a side part. The person is wearing a black top with thin straps. The background appears to be a plain, light-colored wall with some abstract black and white designs."
+  },
+  {
+    "image_name": "000047.jpg",
+    "generated_caption": "The image shows a person with long, dark hair. The person is wearing hoop earrings and has a neutral expression on their face. The background is plain and white."
+  },
+  {
+    "image_name": "000048.jpg",
+    "generated_caption": "The image shows a person with dark hair, wearing a dark suit jacket and a light-colored shirt. The background is dark, and the lighting highlights the person's face and upper body. The person appears to be looking slightly to the side."
+  },
+  {
+    "image_name": "000049.jpg",
+    "generated_caption": "The image shows a man with short, light-colored hair. He is wearing a dark-colored jacket over a gray shirt. The background appears to be an outdoor setting with vertical lines, possibly a fence or a building. The man is looking slightly to the side."
+  },
+  {
+    "image_name": "000050.jpg",
+    "generated_caption": "The image shows a man with dark hair and a slight smile. He is wearing a dark suit jacket over a blue shirt. The background is dark, and there are some indistinct lights and possibly other people in the background."
+  },
+  {
+    "image_name": "000051.jpg",
+    "generated_caption": "The image shows a man with a bald head and a mustache. He is wearing a black shirt and is standing in front of a backdrop that has the text 'THE EMPIRE HOTEL' and some other partially visible text. The man appears to be smiling and looking directly at the camera."
+  },
+  {
+    "image_name": "000052.jpg",
+    "generated_caption": "The image shows a person with short, dark hair. The person is wearing a black leather jacket over a light-colored shirt. The background is a plain, light-colored wall."
+  },
+  {
+    "image_name": "000053.jpg",
+    "generated_caption": "The image shows a person with dark hair wearing sunglasses. The person is wearing a dark-colored shirt and has a microphone in their hand. The background appears to be a busy street with cars and buildings."
+  },
+  {
+    "image_name": "000054.jpg",
+    "generated_caption": "The image shows a person with long, wavy blonde hair. The person is smiling and has a slight smile on their face. The background appears to be outdoors with green foliage."
+  },
+  {
+    "image_name": "000055.jpg",
+    "generated_caption": "The image shows a man with dark hair, wearing a black suit, white shirt, and red tie. He is standing in front of a dark background with vertical lines. The man has a serious expression on his face."
+  },
+  {
+    "image_name": "000056.jpg",
+    "generated_caption": "The image shows a person with long, dark hair. The person is wearing a black shirt. The background appears to be a room with wooden paneling and a lamp. The person is looking directly at the camera with a neutral expression."
+  },
+  {
+    "image_name": "000057.jpg",
+    "generated_caption": "The image shows a person with dark hair styled in a sleek, pulled-back manner. The person is wearing a pair of large, dangling earrings. The background is plain and light-colored, possibly white or light gray. The person is wearing a strapless top with a red or pinkish hue. The person's face is blurred out, making it impossible to identify them."
+  },
+  {
+    "image_name": "000058.jpg",
+    "generated_caption": "The image shows a person with long, dark hair. The background appears to be a red carpet event with various logos and text. The person is wearing a light-colored outfit."
+  },
+  {
+    "image_name": "000059.jpg",
+    "generated_caption": "The image shows a person with long, dark hair styled in loose waves. The person is wearing a black top and has a pair of gold hoop earrings. The background appears to be a red wall with some text and images, but the details are not clear."
+  },
+  {
+    "image_name": "000060.jpg",
+    "generated_caption": "The image shows a person wearing a colorful headscarf with a pattern of red, black, and white. The person is also wearing a blue shirt with a white pattern. The background appears to be a room with a wooden door and some furniture."
+  },
+  {
+    "image_name": "000061.jpg",
+    "generated_caption": "The image shows a person with curly hair wearing a dark-colored shirt. The background is a plain, light-colored wall. The person appears to be looking slightly to the side."
+  },
+  {
+    "image_name": "000062.jpg",
+    "generated_caption": "The image shows a person with long, straight hair that is brown with lighter brown highlights. The hair is parted in the middle and falls over the shoulders. The person is wearing a dark-colored top. The background is dark, and there is a mesh or net-like structure visible behind the person."
+  },
+  {
+    "image_name": "000063.jpg",
+    "generated_caption": "The image shows a person with long, wavy blonde hair. The person is smiling and has a light complexion. The background appears to be a wooden surface with horizontal lines."
+  },
+  {
+    "image_name": "000064.jpg",
+    "generated_caption": "The image shows a person with short, dark hair and a light beard. The person is wearing a brown jacket over a blue shirt. The background appears to be a snowy landscape with some indistinct structures."
+  },
+  {
+    "image_name": "000065.jpg",
+    "generated_caption": "The image shows a person with short, spiky hair. The person is wearing a green shirt. The background is plain and light-colored. The person appears to be looking directly at the camera with a slight smile."
+  },
+  {
+    "image_name": "000066.jpg",
+    "generated_caption": "The image shows a woman with dark hair styled in a half-up, half-down hairstyle. She is wearing a light-colored top and has a pair of large, circular earrings. The background appears to be a crowded event, possibly a red carpet or a public gathering, with people taking photos."
+  },
+  {
+    "image_name": "000067.jpg",
+    "generated_caption": "The image shows a person with short, light brown hair, wearing a dark jacket over a light-colored shirt. The person is holding a cigarette in their right hand, which is raised to their face. The background appears to be an indoor setting with a window and some blurred objects, possibly books or papers, on a shelf."
+  },
+  {
+    "image_name": "000068.jpg",
+    "generated_caption": "The image shows a person wearing a black hat and a dark scarf. The person has gray hair and is wearing a light-colored jacket. The background appears to be indoors with some lights visible."
+  },
+  {
+    "image_name": "000069.jpg",
+    "generated_caption": "The image shows a man with dark hair and a beard, wearing a dark jacket over a light blue shirt. He is standing in front of a backdrop with the text 'ELLE STYLIST AWARDS 2009' visible. The man appears to be looking upwards and to the side, possibly at something or someone off-camera."
+  },
+  {
+    "image_name": "000070.jpg",
+    "generated_caption": "The image shows a man with dark hair, wearing a dark suit jacket and a light blue shirt. He has a serious expression on his face. The background is blurred, but it appears to be an outdoor setting with some greenery."
+  },
+  {
+    "image_name": "000071.jpg",
+    "generated_caption": "The image shows a person with blonde hair, wearing a strapless dress and large earrings. The person is standing in front of a background with the text 'OS' visible."
+  },
+  {
+    "image_name": "000072.jpg",
+    "generated_caption": "The image shows a man with short black hair, wearing a dark suit, white shirt, and a blue tie. He is smiling and appears to be in a formal setting, possibly an office or a meeting room. The background includes a window with a blue frame and a door with a golden handle."
+  },
+  {
+    "image_name": "000073.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair. The hair is dark brown and appears to be styled in loose waves. The person is wearing a pair of earrings that are round and appear to be made of a shiny material, possibly gold or a gold-colored metal. The background is dark and out of focus, making it difficult to discern any specific details about the surroundings."
+  },
+  {
+    "image_name": "000074.jpg",
+    "generated_caption": "The image shows a person wearing a black top hat and a white and black patterned outfit. The person is holding their hand near their face, and the background is plain and light-colored."
+  },
+  {
+    "image_name": "000075.jpg",
+    "generated_caption": "The image shows a person with short, curly hair styled in a vintage manner. The person is wearing a black top, and there is a white hair accessory visible on the right side of their head. The background appears to be a green curtain or fabric."
+  },
+  {
+    "image_name": "000076.jpg",
+    "generated_caption": "The image shows a person with long, dark hair and a beard. The person is wearing a dark-colored shirt. In the background, there are several logos and text, including a green and white logo with the word 'ch' and a colorful logo with the text 'S'. The person appears to be in a professional or formal setting, possibly at a press conference or event."
+  },
+  {
+    "image_name": "000077.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair. The hair is dark brown and appears to be styled in loose waves. The person is wearing a light-colored top, and the background is a plain, light-colored wall."
+  },
+  {
+    "image_name": "000078.jpg",
+    "generated_caption": "The image shows a person with long, dark hair. The background appears to be a textured, orange-colored surface. The person is wearing a green top."
+  },
+  {
+    "image_name": "000079.jpg",
+    "generated_caption": "The image shows a man with a bald head and a mustache. He is wearing a black shirt with a green collar. The background consists of a red and white checkered pattern with the text 'BILLA' and 'verizon' visible."
+  },
+  {
+    "image_name": "000080.jpg",
+    "generated_caption": "The image is a portrait of a man with short, dark hair. He is wearing a brown jacket over a white shirt. The background is a light blue color. The man has a serious expression on his face. There is a signature in the top right corner of the image that reads 'Fred MacMurray'."
+  },
+  {
+    "image_name": "000081.jpg",
+    "generated_caption": "The image shows a person with short, dark hair. The person is wearing a dark-colored shirt. The background is dark, making it difficult to see any additional details."
+  },
+  {
+    "image_name": "000082.jpg",
+    "generated_caption": "The image shows a man with short, dark hair and a slight smile. He is wearing a dark green shirt. The background appears to be a natural setting with green foliage."
+  },
+  {
+    "image_name": "000083.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair. The hair is brown and appears to be styled in loose waves. The person is wearing a necklace with a pendant. The background is a light color with some text visible, but it is not clear enough to read."
+  },
+  {
+    "image_name": "000084.jpg",
+    "generated_caption": "The image shows a person with short, curly gray hair. The person is wearing a purple garment with a high collar. The background appears to be indoors, possibly in a room with a light-colored wall. The person is also wearing large, dangling earrings."
+  },
+  {
+    "image_name": "000085.jpg",
+    "generated_caption": "The image shows a person with long, wavy, reddish-brown hair. The person is wearing a light-colored top with a shiny, possibly metallic, collar. The background appears to be a step-and-repeat banner with some text and logos, but the text is not fully legible."
+  },
+  {
+    "image_name": "000086.jpg",
+    "generated_caption": "The image shows a person with their face blurred out. The person has light brown hair tied back with a pink hair accessory. They are wearing a pink top with thin straps. The background is plain and light-colored."
+  },
+  {
+    "image_name": "000087.jpg",
+    "generated_caption": "The image shows a person with a blurred face. The person has dark hair and is wearing a dark-colored top. The background appears to be a crowded indoor setting with other people visible."
+  },
+  {
+    "image_name": "000088.jpg",
+    "generated_caption": "The image shows a person with long, wavy brown hair. The person is wearing a purple choker necklace. The background is a light blue color with a subtle texture."
+  },
+  {
+    "image_name": "000089.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair. The hair is dark at the roots and lighter at the ends, with some strands appearing to be lighter in color, possibly blonde. The person is wearing a black top, and the background is blurred, making it difficult to discern any specific details."
+  },
+  {
+    "image_name": "000090.jpg",
+    "generated_caption": "The image shows a person with short, light brown hair. The person is wearing a white shirt with a black stripe on the left side. The background is a solid green color."
+  },
+  {
+    "image_name": "000091.jpg",
+    "generated_caption": "The image shows a person with dark hair, wearing a dark suit jacket, a white shirt, and a dark tie. The background has various logos and text, including 'VISION', 'Guitar Hero', and 'Gold To'. The person is standing in front of a black backdrop with these logos and text."
+  },
+  {
+    "image_name": "000092.jpg",
+    "generated_caption": "The image shows a person with blonde hair, wearing a patterned top. The background has a banner with the text 'COLLEGE TELEVISION AWARDS' and some other partially visible text."
+  },
+  {
+    "image_name": "000093.jpg",
+    "generated_caption": "The image shows a person with long, dark hair wearing sunglasses. The person is standing outdoors, with a building and some greenery in the background. The person is wearing a dark-colored top."
+  },
+  {
+    "image_name": "000094.jpg",
+    "generated_caption": "The image shows a person with blonde hair wearing a light-colored outfit. The background has a banner with the text 'HUMAN RIGHTS CAMPAIGNS' and some other partially visible text."
+  },
+  {
+    "image_name": "000095.jpg",
+    "generated_caption": "The image shows a person wearing a white headband and a white shirt. The person appears to be looking to the side with a neutral expression. The background is blurred, but it seems to be an outdoor setting with a blue structure."
+  },
+  {
+    "image_name": "000096.jpg",
+    "generated_caption": "The image shows a person with curly hair. The background is plain and light-colored. The person is wearing a dark-colored top."
+  },
+  {
+    "image_name": "000097.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair. The hair is a mix of brown and blonde colors. The person is holding their hand near their face, with fingers slightly curled. The background is plain and light-colored. The letters 'MIC' are prominently displayed in large, bold font at the top of the image."
+  },
+  {
+    "image_name": "000098.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair. The hair is dark brown and appears to be styled in loose waves. The person is wearing a dark-colored top, and there is a visible earring on the left ear. The background is a warm, orange color with a textured pattern."
+  },
+  {
+    "image_name": "000099.jpg",
+    "generated_caption": "The image shows a person with long, wavy hair. The hair is brown with lighter brown highlights. The person is wearing a black top. The background is red with some black shapes."
+  },
+  {
+    "image_name": "000100.jpg",
+    "generated_caption": "The image shows a person with light brown hair styled in an updo. The person is wearing a black outfit with a high neckline. The background is black with some text and logos, including 'AFI' and 'SACHS WAR'."
+  }
+]
