@@ -1,0 +1,409 @@
+[
+  {
+    "prompt": "<|user|><|image_1|>Carefully caption the avatar in the image. Do not describe the background.<|end|><|assistant|>"
+  },
+  {
+    "image_name": "000001.jpg",
+    "generated_caption": "The avatar has long, straight, light brown hair."
+  },
+  {
+    "image_name": "000002.jpg",
+    "generated_caption": "The avatar has red hair styled in a half-up, half-down fashion. The hair is parted in the middle and is styled to frame the face. The hair appears to be a natural shade of red."
+  },
+  {
+    "image_name": "000003.jpg",
+    "generated_caption": "The avatar is a man with short dark hair."
+  },
+  {
+    "image_name": "000004.jpg",
+    "generated_caption": "The avatar is a woman with dark hair and a serious expression. She is wearing a black top and has a silver earring in her left ear."
+  },
+  {
+    "image_name": "000005.jpg",
+    "generated_caption": "The avatar has short blonde hair."
+  },
+  {
+    "image_name": "000006.jpg",
+    "generated_caption": "The avatar has long, wavy, light brown hair."
+  },
+  {
+    "image_name": "000007.jpg",
+    "generated_caption": "The avatar is a man with short, dark hair and a slight stubble. He has a light complexion and is wearing a gray shirt."
+  },
+  {
+    "image_name": "000008.jpg",
+    "generated_caption": "The avatar is a man with short, dark hair. He is wearing a black suit jacket over a white shirt."
+  },
+  {
+    "image_name": "000009.jpg",
+    "generated_caption": "The avatar is a woman with brown hair and bangs. She is wearing a patterned blouse and has a small earring in her left ear."
+  },
+  {
+    "image_name": "000010.jpg",
+    "generated_caption": "The avatar has long blonde hair and is wearing a red dress."
+  },
+  {
+    "image_name": "000011.jpg",
+    "generated_caption": "The avatar is a woman with long dark hair."
+  },
+  {
+    "image_name": "000012.jpg",
+    "generated_caption": "A man with short dark hair and a slight smile is wearing a dark suit and a white shirt."
+  },
+  {
+    "image_name": "000013.jpg",
+    "generated_caption": "The avatar is a man with short blonde hair."
+  },
+  {
+    "image_name": "000014.jpg",
+    "generated_caption": "A woman with a black tank top and a gold necklace."
+  },
+  {
+    "image_name": "000015.jpg",
+    "generated_caption": "The avatar is a man with short, dark hair. He is wearing a blue suit and a black tie."
+  },
+  {
+    "image_name": "000016.jpg",
+    "generated_caption": "This man has short dark hair and a light stubble. He has a light skin tone and is wearing a dark blue collared shirt. He is looking directly at the camera with a slight smile."
+  },
+  {
+    "image_name": "000017.jpg",
+    "generated_caption": "A woman with a big smile is holding a gold medal."
+  },
+  {
+    "image_name": "000018.jpg",
+    "generated_caption": "The avatar is a woman with blonde hair. She is wearing a leopard print scarf around her neck."
+  },
+  {
+    "image_name": "000019.jpg",
+    "generated_caption": "The avatar is a young woman with long blonde hair. She has a serious expression on her face and is looking directly at the camera."
+  },
+  {
+    "image_name": "000020.jpg",
+    "generated_caption": "The avatar has long, wavy hair and a beard. The hair is brown and appears to be slightly tousled. The beard is also brown and covers the chin and lower part of the face. The person is wearing a dark-colored shirt with a pattern that includes light-colored elements."
+  },
+  {
+    "image_name": "000021.jpg",
+    "generated_caption": "The avatar is a man with short, light brown hair and a mustache. He is wearing a dark suit with a white shirt and a dark tie."
+  },
+  {
+    "image_name": "000022.jpg",
+    "generated_caption": "The avatar is a woman with blonde hair."
+  },
+  {
+    "image_name": "000023.jpg",
+    "generated_caption": "The avatar is a man with short, dark hair. He has a light beard and mustache, and his hair is neatly combed. He is wearing a blue jacket with gold trim and a logo on the left side of his chest."
+  },
+  {
+    "image_name": "000024.jpg",
+    "generated_caption": "The avatar is a woman with blonde hair."
+  },
+  {
+    "image_name": "000025.jpg",
+    "generated_caption": "The avatar is a man with short, light brown hair. He has a light skin tone and is wearing a dark jacket over a light blue shirt. He has a serious expression on his face."
+  },
+  {
+    "image_name": "000026.jpg",
+    "generated_caption": "A woman with long dark hair and a white shirt."
+  },
+  {
+    "image_name": "000027.jpg",
+    "generated_caption": "A woman with long brown hair and a red top."
+  },
+  {
+    "image_name": "000028.jpg",
+    "generated_caption": "The avatar is a woman with brown hair and a smiling face."
+  },
+  {
+    "image_name": "000029.jpg",
+    "generated_caption": "The avatar is a woman with blonde hair and blue eyes. She has a slight smile on her face and is looking directly at the camera. She is wearing a black top and has a few earrings on."
+  },
+  {
+    "image_name": "000030.jpg",
+    "generated_caption": "The avatar has short, light-colored hair and is wearing a dark-colored shirt."
+  },
+  {
+    "image_name": "000031.jpg",
+    "generated_caption": "A woman with a smile on her face."
+  },
+  {
+    "image_name": "000032.jpg",
+    "generated_caption": "The avatar is a man with short, light brown hair. He is wearing a dark suit, a white shirt, and a red tie."
+  },
+  {
+    "image_name": "000033.jpg",
+    "generated_caption": "The avatar is a man with short, dark hair. He is wearing a black suit jacket over a white dress shirt."
+  },
+  {
+    "image_name": "000034.jpg",
+    "generated_caption": "The avatar is a woman with long brown hair."
+  },
+  {
+    "image_name": "000035.jpg",
+    "generated_caption": "The avatar is a woman with dark hair and a serious expression. She has a slight smile on her lips and is looking directly at the camera."
+  },
+  {
+    "image_name": "000036.jpg",
+    "generated_caption": "The avatar is a man with short dark hair."
+  },
+  {
+    "image_name": "000037.jpg",
+    "generated_caption": "The avatar is a man wearing a black cap with a white logo on it."
+  },
+  {
+    "image_name": "000038.jpg",
+    "generated_caption": "The avatar is a man with short, dark hair and a slight smile. He has a light complexion and is wearing a dark shirt."
+  },
+  {
+    "image_name": "000039.jpg",
+    "generated_caption": "The avatar is a woman with dark hair and a bright smile. She is wearing a white top and has a pair of earrings."
+  },
+  {
+    "image_name": "000040.jpg",
+    "generated_caption": "The avatar has dark hair styled in an updo with a few loose strands framing the face. The hair appears to be shiny and well-groomed."
+  },
+  {
+    "image_name": "000041.jpg",
+    "generated_caption": "The avatar is a man with dark hair and a beard. He is smiling and has a pair of sunglasses resting on his head."
+  },
+  {
+    "image_name": "000042.jpg",
+    "generated_caption": "The avatar has long, wavy hair that is blonde and brown. The hair is styled in a way that it falls over the shoulders. The person is wearing a black top."
+  },
+  {
+    "image_name": "000043.jpg",
+    "generated_caption": "The avatar is a woman with long brown hair and a slight smile. She has a fair complexion, light brown eyes, and is wearing makeup including eyeliner, mascara, and a nude lip color. She has a few freckles on her face and is wearing earrings."
+  },
+  {
+    "image_name": "000044.jpg",
+    "generated_caption": "A woman with curly hair and a pink flower crown."
+  },
+  {
+    "image_name": "000045.jpg",
+    "generated_caption": "The avatar has long, wavy brown hair and is wearing a black top."
+  },
+  {
+    "image_name": "000046.jpg",
+    "generated_caption": "The avatar has short black hair and is wearing a black top."
+  },
+  {
+    "image_name": "000047.jpg",
+    "generated_caption": "A woman with long dark hair and a slight smile on her face."
+  },
+  {
+    "image_name": "000048.jpg",
+    "generated_caption": "The avatar is a man with dark hair and a serious expression. He is wearing a dark suit and tie."
+  },
+  {
+    "image_name": "000049.jpg",
+    "generated_caption": "The avatar is a man with short hair and a beard. He is wearing a black shirt."
+  },
+  {
+    "image_name": "000050.jpg",
+    "generated_caption": "The avatar is a man with short dark hair, wearing a dark suit and a blue shirt."
+  },
+  {
+    "image_name": "000051.jpg",
+    "generated_caption": "The avatar is a man with a bald head and a mustache. He is wearing a black shirt."
+  },
+  {
+    "image_name": "000052.jpg",
+    "generated_caption": "The avatar is a man with short, dark hair and a slight stubble. He has a medium build, with a broad face and prominent cheekbones. His eyes are light-colored, and he has a slight smile on his lips. He is wearing a black leather jacket over a light-colored shirt."
+  },
+  {
+    "image_name": "000053.jpg",
+    "generated_caption": "The avatar is a man with dark hair and sunglasses. He is wearing a dark shirt and has a serious expression on his face."
+  },
+  {
+    "image_name": "000054.jpg",
+    "generated_caption": "The avatar is a woman with blonde hair."
+  },
+  {
+    "image_name": "000055.jpg",
+    "generated_caption": "The avatar is a man with short dark hair, wearing a black suit and a red tie."
+  },
+  {
+    "image_name": "000056.jpg",
+    "generated_caption": "The avatar has black hair and is wearing a black shirt."
+  },
+  {
+    "image_name": "000057.jpg",
+    "generated_caption": "The avatar is a woman with dark hair pulled back into a sleek bun. She has a serious expression on her face and is wearing a pair of large, dangling earrings."
+  },
+  {
+    "image_name": "000058.jpg",
+    "generated_caption": "The avatar has long dark hair and is wearing makeup."
+  },
+  {
+    "image_name": "000059.jpg",
+    "generated_caption": "The avatar has long, dark hair styled in loose waves. The hair is parted in the middle and falls over the shoulders. The person is wearing a black top."
+  },
+  {
+    "image_name": "000060.jpg",
+    "generated_caption": "The avatar is a man with a dark complexion, wearing a patterned headscarf and a blue shirt with a white pattern."
+  },
+  {
+    "image_name": "000061.jpg",
+    "generated_caption": "The avatar is a young man with curly hair."
+  },
+  {
+    "image_name": "000062.jpg",
+    "generated_caption": "The avatar is a woman with long brown hair and bangs. She has a slight smile on her face and is looking directly at the camera."
+  },
+  {
+    "image_name": "000063.jpg",
+    "generated_caption": "The avatar is a woman with blonde hair."
+  },
+  {
+    "image_name": "000064.jpg",
+    "generated_caption": "A man with short brown hair and a beard is smiling."
+  },
+  {
+    "image_name": "000065.jpg",
+    "generated_caption": "The avatar is a man with short black hair and a slight smile. He has a light complexion and is wearing a green shirt."
+  },
+  {
+    "image_name": "000066.jpg",
+    "generated_caption": "The avatar is a woman with dark hair and a smile. She is wearing a pair of large hoop earrings."
+  },
+  {
+    "image_name": "000067.jpg",
+    "generated_caption": "The avatar is a man with short brown hair, wearing a black jacket. He is holding a cigarette in his right hand, which is raised to his mouth. He has a serious expression on his face."
+  },
+  {
+    "image_name": "000068.jpg",
+    "generated_caption": "The avatar is an older man with grey hair and a black hat. He is wearing a brown jacket and a black scarf."
+  },
+  {
+    "image_name": "000069.jpg",
+    "generated_caption": "The avatar is a man with short dark hair and a serious expression. He is wearing a dark jacket over a light blue shirt."
+  },
+  {
+    "image_name": "000070.jpg",
+    "generated_caption": "The avatar is a man with short, dark hair. He is wearing a dark suit jacket and a light blue shirt."
+  },
+  {
+    "image_name": "000071.jpg",
+    "generated_caption": "The avatar has short blonde hair and is wearing a pair of blue earrings."
+  },
+  {
+    "image_name": "000072.jpg",
+    "generated_caption": "A man with short black hair wearing a suit and tie."
+  },
+  {
+    "image_name": "000073.jpg",
+    "generated_caption": "The avatar has long, wavy brown hair and is wearing a pair of large, dangling earrings."
+  },
+  {
+    "image_name": "000074.jpg",
+    "generated_caption": "The avatar is a woman with a black top hat and a white hat. She has a black and white checkered shirt on. She has a black and white striped tie. She has a black and white polka dot blouse."
+  },
+  {
+    "image_name": "000075.jpg",
+    "generated_caption": "The avatar is a woman with red hair and red lipstick. She has a white flower in her hair."
+  },
+  {
+    "image_name": "000076.jpg",
+    "generated_caption": "The avatar is a man with long dark hair and a beard. He is smiling and looking to the side."
+  },
+  {
+    "image_name": "000077.jpg",
+    "generated_caption": "The avatar is a woman with long, dark hair. She has a light complexion and is wearing makeup, including eyeliner and mascara. She is smiling and looking directly at the camera."
+  },
+  {
+    "image_name": "000078.jpg",
+    "generated_caption": "The avatar has long dark hair and is wearing a green top."
+  },
+  {
+    "image_name": "000079.jpg",
+    "generated_caption": "The avatar is a man with a bald head and a goatee. He is wearing a black shirt with a collar."
+  },
+  {
+    "image_name": "000080.jpg",
+    "generated_caption": "The avatar is a man with short, dark hair and a slight smile. He is wearing a brown jacket over a white shirt. The man has a well-groomed appearance with a clean-shaven face."
+  },
+  {
+    "image_name": "000081.jpg",
+    "generated_caption": "The avatar is a man with short black hair, wearing a black shirt."
+  },
+  {
+    "image_name": "000082.jpg",
+    "generated_caption": "The avatar is a man with short, dark hair and a slight smile. He has a well-defined jawline and a strong chin. His eyes are light-colored, and he is wearing a dark green shirt."
+  },
+  {
+    "image_name": "000083.jpg",
+    "generated_caption": "The avatar is a woman with brown hair and a slight smile. She has a warm, friendly expression and is looking directly at the viewer."
+  },
+  {
+    "image_name": "000084.jpg",
+    "generated_caption": "The avatar is a woman with short, curly gray hair. She is wearing a purple top and large, dangling earrings."
+  },
+  {
+    "image_name": "000085.jpg",
+    "generated_caption": "The avatar has long, wavy, reddish-brown hair."
+  },
+  {
+    "image_name": "000086.jpg",
+    "generated_caption": "A young girl with brown hair tied up in a bun is making a silly face. She has a gold necklace around her neck and is wearing a pink top."
+  },
+  {
+    "image_name": "000087.jpg",
+    "generated_caption": "The avatar is a woman with a headband, smiling and looking to the side."
+  },
+  {
+    "image_name": "000088.jpg",
+    "generated_caption": "The avatar is a woman with brown hair and a purple choker."
+  },
+  {
+    "image_name": "000089.jpg",
+    "generated_caption": "The avatar is a woman with wavy hair."
+  },
+  {
+    "image_name": "000090.jpg",
+    "generated_caption": "The avatar is a man with short light brown hair and a serious expression. He is wearing a white shirt with a black stripe on the left side."
+  },
+  {
+    "image_name": "000091.jpg",
+    "generated_caption": "The avatar is a young man with dark hair and a serious expression. He is wearing a dark suit jacket, a white shirt, and a dark tie."
+  },
+  {
+    "image_name": "000092.jpg",
+    "generated_caption": "The avatar is a woman with blonde hair and a slight smile. She is wearing a floral dress with a high neckline."
+  },
+  {
+    "image_name": "000093.jpg",
+    "generated_caption": "A woman with long dark hair and sunglasses on."
+  },
+  {
+    "image_name": "000094.jpg",
+    "generated_caption": "The avatar has long, wavy blonde hair."
+  },
+  {
+    "image_name": "000095.jpg",
+    "generated_caption": "The avatar is a woman with a white headband and a white shirt."
+  },
+  {
+    "image_name": "000096.jpg",
+    "generated_caption": "The avatar has curly hair and is wearing a dark-colored top."
+  },
+  {
+    "image_name": "000097.jpg",
+    "generated_caption": "The avatar is a woman with brown hair and blue eyes."
+  },
+  {
+    "image_name": "000098.jpg",
+    "generated_caption": "The avatar is a woman with long dark hair and a serious expression. She is wearing a black choker necklace and has a serious expression on her face."
+  },
+  {
+    "image_name": "000099.jpg",
+    "generated_caption": "The avatar has long brown hair and is smiling."
+  },
+  {
+    "image_name": "000100.jpg",
+    "generated_caption": "The avatar has light brown hair styled in an updo with a side part. The hair is neatly combed and appears to be styled with a curling iron or similar tool. The skin tone is fair, and the hair is shiny, suggesting it might be well-moisturized or styled with a product."
+  },
+  {
+    "image_name": "me.jpg",
+    "generated_caption": "A young man with short brown hair and a white collared shirt."
+  }
+]
