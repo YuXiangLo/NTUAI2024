@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{subcaption}
+\usepackage{hyperref}
 \captionsetup[subfigure]{labelformat=empty}
 \graphicspath{ {./images/} }
 
@@ -20,6 +21,11 @@
 \begin{document}
 
 \maketitle
+
+\[
+	\textcolor{red}{\textbf{\textit{Detail can be found in: }}}
+	\href{https://github.com/YuXiangLo/NTUAI2024}{here}
+\]
 
 \section*{Task 1}
 
@@ -68,17 +74,19 @@
 
 		\begin{subfigure}[t]{0.3\textwidth} % Note [t] for top alignment
 			\centering
-			\fbox{\includegraphics[height=3cm]{1010031975}}
+			\fbox{\includegraphics[height=3.5cm]{1010031975}}
 			\caption{Figure 1-a: flickr30k image}
 		\end{subfigure}
+		\hfill
 		\begin{subfigure}[t]{0.3\textwidth}
 			\centering
-			\fbox{\includegraphics[height=3cm]{me_diff3}}
+			\fbox{\includegraphics[height=3.5cm]{me_diff3}}
 			\caption{Figure 1-b: Peanuts style by stable diffusion v3}
 		\end{subfigure}
+		\hfill
 		\begin{subfigure}[t]{0.3\textwidth}
 			\centering
-			\fbox{\includegraphics[height=3cm]{me_styled}}
+			\fbox{\includegraphics[height=3.5cm]{me_styled}}
 			\caption{Figure 1-c: Peanuts style by stable diffusion v1.5}
 		\end{subfigure}
 	\end{figure}
