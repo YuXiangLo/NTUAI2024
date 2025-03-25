@@ -99,6 +99,7 @@
 		\begin{itemize}
 			\item Generated captions with Phi-4 beforehand and stored in a json file.
 			\item Used \textcolor{blue}{\texttt{diffusers.StableDiffusion3Pipeline}}.
+			\item Prompt: \textit{``Peanuts comic style illustration of:\textbackslash n\textbackslash n'' $+$ Phi4-Captions}
 		\end{itemize}
 	\item Visualization:
 		\begin{enumerate}
@@ -223,10 +224,10 @@
 					\end{minipage}
 					\caption{Task 2-1: Failure samples}
 				\end{figure}
+			\newpage
 			\item I tried to generate detailed captions so that the text-to-image (T2I) model would receive as many instructions as possible. I achieved this by asking the model not to describe the background but to focus on the avatar. This did not lead to a significant improvement. Then I tried to improve performance by clarifying the prompt to indicate a ``Peanuts comic'' style (I was worried the model might interpret ``peanut'' as ``groundnut''). It did not work better either. In conclusion, I think zero-shot usage of Stable Diffusion might not yield a significant improvement.
 		\end{enumerate}
 \end{enumerate}
-\newpage
 \section*{Task 2-2}
 \begin{enumerate}
 	\item Briefly describe how you implement task 2-2:
@@ -234,6 +235,7 @@
 			\item Generated the captions by Phi-4 beforehand and stored in a json file.
 			\item Padded or resized image to 512 $\times$ 512.
 			\item Used \textcolor{blue}{\texttt{diffusers.StableDiffusionImg2ImgPipeline}}.
+			\item Prompt: \textit{``Peanuts comic style illustration of:\textbackslash n\textbackslash n'' $+$ Phi4-Captions}
 		\end{itemize}
 	\item Visualization:
 		\begin{enumerate}

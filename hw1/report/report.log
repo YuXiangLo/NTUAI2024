@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.15)  24 MAR 2025 08:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.15)  25 MAR 2025 15:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -420,211 +420,218 @@ File: ./images/me_styled.png Graphic file (type png)
 <use ./images/me_styled.png>
 Package pdftex.def Info: ./images/me_styled.png  used on input line 89.
 (pdftex.def)             Requested size: 99.58272pt x 99.58464pt.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+02.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
 <./images/000002.jpg, id=29, 178.6675pt x 218.8175pt>
 File: ./images/000002.jpg Graphic file (type jpg)
 <use ./images/000002.jpg>
-Package pdftex.def Info: ./images/000002.jpg  used on input line 115.
+Package pdftex.def Info: ./images/000002.jpg  used on input line 116.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 <./images/000073.jpg, id=30, 178.6675pt x 218.8175pt>
 File: ./images/000073.jpg Graphic file (type jpg)
 <use ./images/000073.jpg>
-Package pdftex.def Info: ./images/000073.jpg  used on input line 120.
+Package pdftex.def Info: ./images/000073.jpg  used on input line 121.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 <./images/000012.jpg, id=31, 178.6675pt x 218.8175pt>
 File: ./images/000012.jpg Graphic file (type jpg)
 <use ./images/000012.jpg>
-Package pdftex.def Info: ./images/000012.jpg  used on input line 125.
+Package pdftex.def Info: ./images/000012.jpg  used on input line 126.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 <./images/000020.jpg, id=32, 178.6675pt x 218.8175pt>
 File: ./images/000020.jpg Graphic file (type jpg)
 <use ./images/000020.jpg>
-Package pdftex.def Info: ./images/000020.jpg  used on input line 130.
+Package pdftex.def Info: ./images/000020.jpg  used on input line 131.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 <./images/000022.jpg, id=33, 178.6675pt x 218.8175pt>
 File: ./images/000022.jpg Graphic file (type jpg)
 <use ./images/000022.jpg>
-Package pdftex.def Info: ./images/000022.jpg  used on input line 135.
+Package pdftex.def Info: ./images/000022.jpg  used on input line 136.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 <./images/000002_diff3.jpg, id=34, 1027.84pt x 1027.84pt>
 File: ./images/000002_diff3.jpg Graphic file (type jpg)
 <use ./images/000002_diff3.jpg>
-Package pdftex.def Info: ./images/000002_diff3.jpg  used on input line 143.
+Package pdftex.def Info: ./images/000002_diff3.jpg  used on input line 144.
 (pdftex.def)             Requested size: 54.04553pt x 54.06006pt.
 <./images/000073_diff3.jpg, id=35, 1027.84pt x 1027.84pt>
 File: ./images/000073_diff3.jpg Graphic file (type jpg)
 <use ./images/000073_diff3.jpg>
-Package pdftex.def Info: ./images/000073_diff3.jpg  used on input line 148.
+Package pdftex.def Info: ./images/000073_diff3.jpg  used on input line 149.
 (pdftex.def)             Requested size: 54.04553pt x 54.06006pt.
 <./images/000012_diff3.jpg, id=36, 1027.84pt x 1027.84pt>
 File: ./images/000012_diff3.jpg Graphic file (type jpg)
 <use ./images/000012_diff3.jpg>
-Package pdftex.def Info: ./images/000012_diff3.jpg  used on input line 153.
+Package pdftex.def Info: ./images/000012_diff3.jpg  used on input line 154.
 (pdftex.def)             Requested size: 54.04553pt x 54.06006pt.
 <./images/000020_diff3.jpg, id=37, 1027.84pt x 1027.84pt>
 File: ./images/000020_diff3.jpg Graphic file (type jpg)
 <use ./images/000020_diff3.jpg>
-Package pdftex.def Info: ./images/000020_diff3.jpg  used on input line 158.
+Package pdftex.def Info: ./images/000020_diff3.jpg  used on input line 159.
 (pdftex.def)             Requested size: 54.04553pt x 54.06006pt.
 <./images/000022_diff3.jpg, id=38, 1027.84pt x 1027.84pt>
 File: ./images/000022_diff3.jpg Graphic file (type jpg)
 <use ./images/000022_diff3.jpg>
-Package pdftex.def Info: ./images/000022_diff3.jpg  used on input line 163.
+Package pdftex.def Info: ./images/000022_diff3.jpg  used on input line 164.
 (pdftex.def)             Requested size: 54.04553pt x 54.06006pt.
 <./images/000029.jpg, id=39, 178.6675pt x 218.8175pt>
 File: ./images/000029.jpg Graphic file (type jpg)
 <use ./images/000029.jpg>
-Package pdftex.def Info: ./images/000029.jpg  used on input line 172.
+Package pdftex.def Info: ./images/000029.jpg  used on input line 173.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 <./images/000060.jpg, id=40, 178.6675pt x 218.8175pt>
 File: ./images/000060.jpg Graphic file (type jpg)
 <use ./images/000060.jpg>
-Package pdftex.def Info: ./images/000060.jpg  used on input line 177.
+Package pdftex.def Info: ./images/000060.jpg  used on input line 178.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 <./images/000009.jpg, id=41, 178.6675pt x 218.8175pt>
 File: ./images/000009.jpg Graphic file (type jpg)
 <use ./images/000009.jpg>
-Package pdftex.def Info: ./images/000009.jpg  used on input line 182.
+Package pdftex.def Info: ./images/000009.jpg  used on input line 183.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 <./images/000077.jpg, id=42, 178.6675pt x 218.8175pt>
 File: ./images/000077.jpg Graphic file (type jpg)
 <use ./images/000077.jpg>
-Package pdftex.def Info: ./images/000077.jpg  used on input line 187.
+Package pdftex.def Info: ./images/000077.jpg  used on input line 188.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 <./images/000084.jpg, id=43, 178.6675pt x 218.8175pt>
 File: ./images/000084.jpg Graphic file (type jpg)
 <use ./images/000084.jpg>
-Package pdftex.def Info: ./images/000084.jpg  used on input line 192.
+Package pdftex.def Info: ./images/000084.jpg  used on input line 193.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 <./images/000029_diff3.jpg, id=44, 1027.84pt x 1027.84pt>
 File: ./images/000029_diff3.jpg Graphic file (type jpg)
 <use ./images/000029_diff3.jpg>
-Package pdftex.def Info: ./images/000029_diff3.jpg  used on input line 200.
+Package pdftex.def Info: ./images/000029_diff3.jpg  used on input line 201.
 (pdftex.def)             Requested size: 54.04553pt x 54.06006pt.
 <./images/000060_diff3.jpg, id=45, 1027.84pt x 1027.84pt>
 File: ./images/000060_diff3.jpg Graphic file (type jpg)
 <use ./images/000060_diff3.jpg>
-Package pdftex.def Info: ./images/000060_diff3.jpg  used on input line 205.
+Package pdftex.def Info: ./images/000060_diff3.jpg  used on input line 206.
 (pdftex.def)             Requested size: 54.04553pt x 54.06006pt.
 <./images/000009_diff3.jpg, id=46, 1027.84pt x 1027.84pt>
 File: ./images/000009_diff3.jpg Graphic file (type jpg)
 <use ./images/000009_diff3.jpg>
-Package pdftex.def Info: ./images/000009_diff3.jpg  used on input line 210.
+Package pdftex.def Info: ./images/000009_diff3.jpg  used on input line 211.
 (pdftex.def)             Requested size: 54.04553pt x 54.06006pt.
 <./images/000077_diff3.jpg, id=47, 1027.84pt x 1027.84pt>
 File: ./images/000077_diff3.jpg Graphic file (type jpg)
 <use ./images/000077_diff3.jpg>
-Package pdftex.def Info: ./images/000077_diff3.jpg  used on input line 215.
+Package pdftex.def Info: ./images/000077_diff3.jpg  used on input line 216.
 (pdftex.def)             Requested size: 54.04553pt x 54.06006pt.
 <./images/000084_diff3.jpg, id=48, 1027.84pt x 1027.84pt>
 File: ./images/000084_diff3.jpg Graphic file (type jpg)
 <use ./images/000084_diff3.jpg>
-Package pdftex.def Info: ./images/000084_diff3.jpg  used on input line 220.
+Package pdftex.def Info: ./images/000084_diff3.jpg  used on input line 221.
 (pdftex.def)             Requested size: 54.04553pt x 54.06006pt.
-[2 <./images/1010031975.jpg> <./images/me_diff3.jpg> <./images/me_styled.png (P
-NG copy)> <./images/000002.jpg> <./images/000073.jpg> <./images/000012.jpg> <./
-images/000020.jpg> <./images/000022.jpg> <./images/000002_diff3.jpg> <./images/
-000073_diff3.jpg> <./images/000012_diff3.jpg> <./images/000020_diff3.jpg> <./im
-ages/000022_diff3.jpg> <./images/000029.jpg> <./images/000060.jpg> <./images/00
-0009.jpg> <./images/000077.jpg> <./images/000084.jpg> <./images/000029_diff3.jp
-g> <./images/000060_diff3.jpg> <./images/000009_diff3.jpg> <./images/000077_dif
-f3.jpg> <./images/000084_diff3.jpg>]
+ [2 <./images/1010031975.jpg> <./images/me_diff3.jpg> <./images/me_styled.png (
+PNG copy)> <./images/000002.jpg> <./images/000073.jpg> <./images/000012.jpg> <.
+/images/000020.jpg> <./images/000022.jpg> <./images/000002_diff3.jpg> <./images
+/000073_diff3.jpg> <./images/000012_diff3.jpg> <./images/000020_diff3.jpg> <./i
+mages/000022_diff3.jpg> <./images/000029.jpg> <./images/000060.jpg> <./images/0
+00009.jpg> <./images/000077.jpg> <./images/000084.jpg> <./images/000029_diff3.j
+pg> <./images/000060_diff3.jpg> <./images/000009_diff3.jpg> <./images/000077_di
+ff3.jpg> <./images/000084_diff3.jpg>]
 File: ./images/000002.jpg Graphic file (type jpg)
 <use ./images/000002.jpg>
-Package pdftex.def Info: ./images/000002.jpg  used on input line 250.
+Package pdftex.def Info: ./images/000002.jpg  used on input line 252.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
-<./images/000003.jpg, id=62, 178.6675pt x 218.8175pt>
+<./images/000003.jpg, id=61, 178.6675pt x 218.8175pt>
 File: ./images/000003.jpg Graphic file (type jpg)
 <use ./images/000003.jpg>
-Package pdftex.def Info: ./images/000003.jpg  used on input line 255.
+Package pdftex.def Info: ./images/000003.jpg  used on input line 257.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
 File: ./images/000012.jpg Graphic file (type jpg)
 <use ./images/000012.jpg>
-Package pdftex.def Info: ./images/000012.jpg  used on input line 260.
+Package pdftex.def Info: ./images/000012.jpg  used on input line 262.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
-<./images/000005.jpg, id=63, 178.6675pt x 218.8175pt>
+<./images/000005.jpg, id=62, 178.6675pt x 218.8175pt>
 File: ./images/000005.jpg Graphic file (type jpg)
 <use ./images/000005.jpg>
-Package pdftex.def Info: ./images/000005.jpg  used on input line 265.
+Package pdftex.def Info: ./images/000005.jpg  used on input line 267.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
-<./images/000055.jpg, id=64, 178.6675pt x 218.8175pt>
+<./images/000055.jpg, id=63, 178.6675pt x 218.8175pt>
 File: ./images/000055.jpg Graphic file (type jpg)
 <use ./images/000055.jpg>
-Package pdftex.def Info: ./images/000055.jpg  used on input line 270.
+Package pdftex.def Info: ./images/000055.jpg  used on input line 272.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
-<./images/000002_styled.png, id=65, 513.92pt x 513.92pt>
+<./images/000002_styled.png, id=64, 513.92pt x 513.92pt>
 File: ./images/000002_styled.png Graphic file (type png)
 <use ./images/000002_styled.png>
-Package pdftex.def Info: ./images/000002_styled.png  used on input line 278.
+Package pdftex.def Info: ./images/000002_styled.png  used on input line 280.
 (pdftex.def)             Requested size: 54.05336pt x 54.06006pt.
-<./images/000003_styled.png, id=66, 513.92pt x 513.92pt>
+<./images/000003_styled.png, id=65, 513.92pt x 513.92pt>
 File: ./images/000003_styled.png Graphic file (type png)
 <use ./images/000003_styled.png>
-Package pdftex.def Info: ./images/000003_styled.png  used on input line 283.
+Package pdftex.def Info: ./images/000003_styled.png  used on input line 285.
 (pdftex.def)             Requested size: 54.05336pt x 54.06006pt.
-<./images/000012_styled.png, id=67, 513.92pt x 513.92pt>
+<./images/000012_styled.png, id=66, 513.92pt x 513.92pt>
 File: ./images/000012_styled.png Graphic file (type png)
 <use ./images/000012_styled.png>
-Package pdftex.def Info: ./images/000012_styled.png  used on input line 288.
+Package pdftex.def Info: ./images/000012_styled.png  used on input line 290.
 (pdftex.def)             Requested size: 54.05336pt x 54.06006pt.
-<./images/000005_styled.png, id=68, 513.92pt x 513.92pt>
+<./images/000005_styled.png, id=67, 513.92pt x 513.92pt>
 File: ./images/000005_styled.png Graphic file (type png)
 <use ./images/000005_styled.png>
-Package pdftex.def Info: ./images/000005_styled.png  used on input line 293.
+Package pdftex.def Info: ./images/000005_styled.png  used on input line 295.
 (pdftex.def)             Requested size: 54.05336pt x 54.06006pt.
-<./images/000055_styled.png, id=69, 513.92pt x 513.92pt>
+<./images/000055_styled.png, id=68, 513.92pt x 513.92pt>
 File: ./images/000055_styled.png Graphic file (type png)
 <use ./images/000055_styled.png>
-Package pdftex.def Info: ./images/000055_styled.png  used on input line 298.
+Package pdftex.def Info: ./images/000055_styled.png  used on input line 300.
 (pdftex.def)             Requested size: 54.05336pt x 54.06006pt.
-<./images/000018.jpg, id=70, 178.6675pt x 218.8175pt>
+<./images/000018.jpg, id=69, 178.6675pt x 218.8175pt>
 File: ./images/000018.jpg Graphic file (type jpg)
 <use ./images/000018.jpg>
-Package pdftex.def Info: ./images/000018.jpg  used on input line 307.
+Package pdftex.def Info: ./images/000018.jpg  used on input line 309.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
-<./images/000030.jpg, id=71, 178.6675pt x 218.8175pt>
+<./images/000030.jpg, id=70, 178.6675pt x 218.8175pt>
 File: ./images/000030.jpg Graphic file (type jpg)
 <use ./images/000030.jpg>
-Package pdftex.def Info: ./images/000030.jpg  used on input line 312.
+Package pdftex.def Info: ./images/000030.jpg  used on input line 314.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
-<./images/000042.jpg, id=72, 178.6675pt x 218.8175pt>
+<./images/000042.jpg, id=71, 178.6675pt x 218.8175pt>
 File: ./images/000042.jpg Graphic file (type jpg)
 <use ./images/000042.jpg>
-Package pdftex.def Info: ./images/000042.jpg  used on input line 317.
+Package pdftex.def Info: ./images/000042.jpg  used on input line 319.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
-<./images/000045.jpg, id=73, 178.6675pt x 218.8175pt>
+<./images/000045.jpg, id=72, 178.6675pt x 218.8175pt>
 File: ./images/000045.jpg Graphic file (type jpg)
 <use ./images/000045.jpg>
-Package pdftex.def Info: ./images/000045.jpg  used on input line 322.
+Package pdftex.def Info: ./images/000045.jpg  used on input line 324.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
-<./images/000048.jpg, id=74, 178.6675pt x 218.8175pt>
+<./images/000048.jpg, id=73, 178.6675pt x 218.8175pt>
 File: ./images/000048.jpg Graphic file (type jpg)
 <use ./images/000048.jpg>
-Package pdftex.def Info: ./images/000048.jpg  used on input line 327.
+Package pdftex.def Info: ./images/000048.jpg  used on input line 329.
 (pdftex.def)             Requested size: 44.1406pt x 54.06006pt.
-<./images/000018_styled.png, id=75, 513.92pt x 513.92pt>
+<./images/000018_styled.png, id=74, 513.92pt x 513.92pt>
 File: ./images/000018_styled.png Graphic file (type png)
 <use ./images/000018_styled.png>
-Package pdftex.def Info: ./images/000018_styled.png  used on input line 335.
+Package pdftex.def Info: ./images/000018_styled.png  used on input line 337.
 (pdftex.def)             Requested size: 54.05336pt x 54.06006pt.
-<./images/000030_styled.png, id=76, 513.92pt x 513.92pt>
+<./images/000030_styled.png, id=75, 513.92pt x 513.92pt>
 File: ./images/000030_styled.png Graphic file (type png)
 <use ./images/000030_styled.png>
-Package pdftex.def Info: ./images/000030_styled.png  used on input line 340.
+Package pdftex.def Info: ./images/000030_styled.png  used on input line 342.
 (pdftex.def)             Requested size: 54.05336pt x 54.06006pt.
-<./images/000042_styled.png, id=77, 513.92pt x 513.92pt>
+<./images/000042_styled.png, id=76, 513.92pt x 513.92pt>
 File: ./images/000042_styled.png Graphic file (type png)
 <use ./images/000042_styled.png>
-Package pdftex.def Info: ./images/000042_styled.png  used on input line 345.
+Package pdftex.def Info: ./images/000042_styled.png  used on input line 347.
 (pdftex.def)             Requested size: 54.05336pt x 54.06006pt.
-<./images/000045_styled.png, id=78, 513.92pt x 513.92pt>
+<./images/000045_styled.png, id=77, 513.92pt x 513.92pt>
 File: ./images/000045_styled.png Graphic file (type png)
 <use ./images/000045_styled.png>
-Package pdftex.def Info: ./images/000045_styled.png  used on input line 350.
+Package pdftex.def Info: ./images/000045_styled.png  used on input line 352.
 (pdftex.def)             Requested size: 54.05336pt x 54.06006pt.
-<./images/000048_styled.png, id=79, 513.92pt x 513.92pt>
+<./images/000048_styled.png, id=78, 513.92pt x 513.92pt>
 File: ./images/000048_styled.png Graphic file (type png)
 <use ./images/000048_styled.png>
-Package pdftex.def Info: ./images/000048_styled.png  used on input line 355.
+Package pdftex.def Info: ./images/000048_styled.png  used on input line 357.
 (pdftex.def)             Requested size: 54.05336pt x 54.06006pt.
  [3 <./images/000003.jpg> <./images/000005.jpg> <./images/000055.jpg> <./images
 /000002_styled.png (PNG copy)> <./images/000003_styled.png (PNG copy)> <./image
@@ -642,10 +649,10 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11058 strings out of 474116
- 182720 string characters out of 5743682
+ 11078 strings out of 474116
+ 183078 string characters out of 5743682
  1945187 words of memory out of 5000000
- 33290 multiletter control sequences out of 15000+600000
+ 33307 multiletter control sequences out of 15000+600000
  563524 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,848b,688s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -660,7 +667,7 @@ cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
 l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local
 /texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on report.pdf (3 pages, 4814713 bytes).
+Output written on report.pdf (3 pages, 4817197 bytes).
 PDF statistics:
  145 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
