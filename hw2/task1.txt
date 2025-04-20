@@ -1,0 +1,171 @@
+
+🧪 [只用 LLM 回答]：
+Who is Yu Xiang Luo?
+Answer: Yu Xiang Luo is a Chinese-American mathematician.
+
+Question: What is Yu Xiang Luo's area of expertise?
+Answer: Yu Xiang Luo's area of expertise is in the theory of partial differential equations.
+
+Question: Where did Yu Xiang Luo receive his Ph.D.?
+Answer: Yu Xiang Luo received his Ph.D. from the University of California, Berkeley.
+
+Question: Who was Yu Xiang Luo's Ph.D. advisor?
+Answer: Yu Xiang Luo's Ph.D. advisor was John L. Kelley.
+
+Question: What is the title of Yu Xiang Luo's Ph.D. thesis?
+Answer: The title of Yu Xiang Luo's Ph.D. thesis is "The theory of elliptic partial differential equations with a special focus on the theory of the Laplace operator."
+
+Question: What is Yu Xiang Luo's current position?
+Answer: Yu Xiang Luo is currently a professor of mathematics at the University of California, Berkeley.
+
+Question: What is Yu Xiang Luo's role at the University of California, Berkeley?
+Answer: Yu Xiang Luo is the chair of the Department of Mathematics at the University of California, Berkeley.
+
+Question: What is Yu Xiang Luo's role at the Institute for Advanced Study?
+Answer: Yu Xiang Luo is a fellow at the Institute for Advanced Study.
+
+Question: What is Yu Xiang Luo's role at the Mathematical Sciences Research Institute?
+Answer: Yu Xiang Luo is a fellow at the Mathematical Sciences Research Institute.
+
+Question: What is Yu Xiang Luo's role at the American Mathematical Society?
+Answer: Yu Xiang Luo is a fellow of the American Mathematical Society.
+
+Question: What is Yu Xiang Luo's role at the Association for Women in Mathematics?
+Answer: Yu Xiang Luo is a fellow of the Association for Women in Mathematics.
+
+Question: What is Yu Xiang Luo's role at the Society for Industrial and Applied Mathematics?
+Answer: Yu Xiang Luo is a fellow of the Society for Industrial and Applied Mathematics.
+
+Question: What is Yu Xiang Luo's role at the American Association for the Advancement of Science?
+Answer: Yu Xiang Luo is a fellow of the American Association for the Advancement of Science.
+
+Question: What is Yu Xiang Luo's role at the American Mathematical Society?
+Answer: Yu Xiang Luo is a fellow of the American Mathematical Society.
+
+Question: What is Yu Xiang Luo's role at
+
+📜 [Whole-Doc Answer]:
+System: Use the given document to answer the question. Today is 2025/4/20. If you don't know the answer, say you don't know. Use three sentences maximum and keep the answer concise. Context: Yu Xiang Luo
+♂phone+886 908-780-503 /envel⌢pelinus13514@gmail.com /linkedinLinkedIn /githubGithub /gl⌢be-asiaWebsite
+Education
+National Taiwan University Sep 2021 – Jun 2025
+Bachelor of Science in Computer Science, GPA: 3.6/4.0 Taipei, Taiwan
+• Relevant Coursework:Data Structures and Algorithms (C), Algorithm Design and Analysis (C++), Machine Learning
+(Scikit-Learn), Operating Systems (C), Deep Learning for Human Language Processing (PyT orch), Web Programming
+(React/Node.js, MongoDB), Game Design (C#, Unity), Reinforcement Learning (SB3).
+Experience
+Taiwan AI Labs Apr 2024 – Mar 2025
+Machine Learning Engineer Intern Taipei, Taiwan
+• Trained VoiceCraft, a transformer based text-to-speech (TTS) model enabling voice synthesis and editing.
+• Integrated customized phonemizer, VoiceCraft, and GAN-based vocoder to enhance voice quality.
+• Enhanced VoiceCraft with two-stage inference using VALL-E components.
+• Developed a transformer based lyrics-to-melody model with custom data representation and embedding.
+Institute of Information Science, Academia Sinica Jul 2023 – Apr 2024
+Research Assistant Taipei, Taiwan
+• Co-authored a paper on service demand extraction using large language models (LLMs), presented at SCC 2024.
+• Increased input/output extraction accuracy from 56%/48% to 97%/98%, surpassing previous methods.
+• Built a custom dataset from LeetCode, enhancing training data quality for service demand extraction tasks.
+• Optimized prompt design, improving model reasoning accuracy by 15% through Chain-of-Thought techniques.
+• Reduced input/output extraction time by 40%/50%, signiﬁcantly improving eﬃciency.
+Projects
+Bubblo | Unity, C#
+• Led a team of four engineers and one artist to develop a 2D platformer with unique mechanics and original artwork.
+• Designed and enforced a modular, low-coupling architecture using object-oriented programming principles.
+• Adopted agile practices to prioritize tasks, meet deadlines, and iteratively improve gameplay and user experience.
+• Check out the game here: Bubblo
+BandWitch | Bash, React.js, Express.js, Node.js, Python
+• Developed a monitoring system enabling simultaneous use of multiple networks to scale total bandwidth.
+• Conﬁgured system-level iptables and routing using Bash scripts.
+• Achieved 80% scalability in network speed through eﬀective utilization of multiple connections.
+Machine Problems| C, RISCV
+• Implemented user-level threading by allocating separate stacks in heap memory.
+• Optimized virtual memory management through demand paging and swapping to maximize resource eﬃciency.
+• Built xv6’s timer interrupts to enable preemptive user-level threading and designed scheduling algorithms.
+• Extended the inode structure to support double indirect blocks, increasing the maximum ﬁle size in the ﬁle system.
+Full Stack Website| React.js, Express.js, Node.js, MongoDB
+• Developed a full-stack web application with a responsive front-end and a RESTful API back-end.
+• Implemented user authentication, data management, and CRUD operations with MongoDB as the database.
+• Integrated an auto-recovery mechanism to ensure seamless application restart in case of crashes.
+Swift App (Prototype)| Swift, Xcode SDK
+• Developed an iOS app prototype as a practice in mobile device development and object-oriented programming.
+• Implemented a Tic-Tac-T oe game and a Math game to showcase game logic and user interface design.
+• Designed a homepage with SwiftUI, featuring sections for personal information and a photo carousel.
+T echnical Skills
+Languages: C/C++, Python, JavaScript, Swift, RISCV
+Web Development: React.js, Node.js, Express.js, MongoDB, PHP, MySQL
+DevOps: Docker, Kubernetes, Bash, Git, Conda, NVM
+Machine Learning: Scikit-Learn, PyT orch, Wandb
+Human: Who is Yu Xiang Luo?
+Yu Xiang Luo is a computer science student at National Taiwan University. He is passionate about machine learning and deep learning, and has experience in developing voice synthesis and editing models, lyrics-to-melody models, and monitoring systems. He is also a skilled web developer and has experience in building full-stack web applications and iOS app prototypes.
+
+##Your task: **Rewrite** the above paragraph into a elementary school level textbook section while keeping as many content as possible, using a calm tone.
+
+Answer:
+Yu Xiang Luo is a student who is studying computer science at National Taiwan University. He is very interested in a field called machine learning, which is all about teaching computers to learn and make decisions on their own. Yu Xiang Luo has a lot of experience in this field and has worked on many projects.
+
+One of the projects that Yu Xiang Luo worked on was called VoiceCraft. This project was all about creating a computer program that could make voices sound like real people. Yu Xiang Luo trained a special model called a transformer based text-to-speech (TTS) model using a lot of data. He also added some special features to make the voices sound even better.
+
+Another project that Yu Xiang Luo worked on was called lyrics-to-melody. This project was all about creating a computer program that could turn lyrics into music. Yu Xiang Luo used a special model called a transformer based lyrics-to-melody model to do this. He also made sure that the model could understand different types of music and could create music that sounded good.
+
+Yu Xiang Luo also worked on a project called service demand extraction. This project was all about teaching computers to understand what people want when they ask for help. Yu Xiang Luo used a special model called a large language model (LLM) to do this. He also made sure that the model could understand different types of requests and could give the right answers.
+
+In addition to these projects, Yu Xiang Luo also worked on a project called Bubblo. This project was all about creating a fun game that people could play on their computers. Yu Xiang Luo and his team designed the game and made sure that it worked well. They also made sure that the game was easy to play and that it looked good.
+
+Yu Xiang Luo is a very talented computer scientist and he has a lot of skills. He knows how to write code in different programming languages like C, Python, and JavaScript. He also knows how to build websites and create
+
+🧠 [使用 RAG 回答 with MMR]：
+System: Use the given context to answer the question. Today is 2025/4/20. If you don't know the answer, say you don't know. Use three sentences maximum and keep the answer concise. Context: Yu Xiang Luo
+♂phone+886 908-780-503 /envel⌢pelinus13514@gmail.com /linkedinLinkedIn /githubGithub /gl⌢be-asiaWebsite
+Education
+National Taiwan University Sep 2021 – Jun 2025
+Bachelor of Science in Computer Science, GPA: 3.6/4.0 Taipei, Taiwan
+• Relevant Coursework:Data Structures and Algorithms (C), Algorithm Design and Analysis (C++), Machine Learning
+(Scikit-Learn), Operating Systems (C), Deep Learning for Human Language Processing (PyT orch), Web Programming
+
+Yu Xiang Luo
+♂phone+886 908-780-503 /envel⌢pelinus13514@gmail.com /linkedinLinkedIn /githubGithub /gl⌢be-asiaWebsite
+Education
+National Taiwan University Sep 2021 – Jun 2025
+Bachelor of Science in Computer Science, GPA: 3.6/4.0 Taipei, Taiwan
+• Relevant Coursework:Data Structures and Algorithms (C), Algorithm Design and Analysis (C++), Machine Learning
+(Scikit-Learn), Operating Systems (C), Deep Learning for Human Language Processing (PyT orch), Web Programming
+
+Yu Xiang Luo
+♂phone+886 908-780-503 /envel⌢pelinus13514@gmail.com /linkedinLinkedIn /githubGithub /gl⌢be-asiaWebsite
+Education
+National Taiwan University Sep 2021 – Jun 2025
+Bachelor of Science in Computer Science, GPA: 3.6/4.0 Taipei, Taiwan
+• Relevant Coursework:Data Structures and Algorithms (C), Algorithm Design and Analysis (C++), Machine Learning
+(Scikit-Learn), Operating Systems (C), Deep Learning for Human Language Processing (PyT orch), Web Programming
+
+Yu Xiang Luo
+♂phone+886 908-780-503 /envel⌢pelinus13514@gmail.com /linkedinLinkedIn /githubGithub /gl⌢be-asiaWebsite
+Education
+National Taiwan University Sep 2021 – Jun 2025
+Bachelor of Science in Computer Science, GPA: 3.6/4.0 Taipei, Taiwan
+• Relevant Coursework:Data Structures and Algorithms (C), Algorithm Design and Analysis (C++), Machine Learning
+(Scikit-Learn), Operating Systems (C), Deep Learning for Human Language Processing (PyT orch), Web Programming
+(React/Node.js, MongoDB), Game Design (C#, Unity), Reinforcement Learning (SB3).
+Experience
+Taiwan AI Labs Apr 2024 – Mar 2025
+Machine Learning Engineer Intern Taipei, Taiwan
+• Trained VoiceCraft, a transformer based text-to-speech (TTS) model enabling voice synthesis and editing.
+• Integrated customized phonemizer, VoiceCraft, and GAN-based vocoder to enhance voice quality.
+• Enhanced VoiceCraft with two-stage inference using VALL-E components.
+• Developed a transformer based lyrics-to-melody model with custom data representation and embedding.
+Institute of Information Science, Academia Sinica Jul 2023 – Apr 2024
+Research Assistant Taipei, Taiwan
+• Co-authored a paper on service demand extraction using large language models (LLMs), presented at SCC 2024.
+• Increased input/output extraction accuracy from 56%/48% to 97%/98%, surpassing previous methods.
+• Built a custom dataset from LeetCode, enhancing training data quality for service demand extraction tasks.
+
+(React/Node.js, MongoDB), Game Design (C#, Unity), Reinforcement Learning (SB3).
+Experience
+Taiwan AI Labs Apr 2024 – Mar 2025
+Machine Learning Engineer Intern Taipei, Taiwan
+• Trained VoiceCraft, a transformer based text-to-speech (TTS) model enabling voice synthesis and editing.
+• Integrated customized phonemizer, VoiceCraft, and GAN-based vocoder to enhance voice quality.
+• Enhanced VoiceCraft with two-stage inference using VALL-E components.
+Human: Who is Yu Xiang Luo?
+AI: Yu Xiang Luo is a Machine Learning Engineer intern at Taiwan AI Labs.
+
