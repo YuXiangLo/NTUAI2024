@@ -47,14 +47,7 @@ def load_qa_chain(
     vectorstore = FAISS.load_local(index_dir, embeddings, allow_dangerous_deserialization=True)
 
     # 1) FAISS retrieves top‑10
-    faiss_retriever = vectorstore.as_retriever(
-        search_type="mmr",
-        search_kwargs={
-            "fetch_k": 20,
-            "k": 10,
-            "lambda_mult": 0.5
-        }
-    )
+    faiss_retriever = vectorstore.as_retriever(search_kwargs={"k": 10})
 
     # 2) wrap your HF cross‑encoder
     cross_encoder = HuggingFaceCrossEncoder(
@@ -117,4 +110,3 @@ if __name__ == "__main__":
 
     qa = load_qa_chain(args.cache_dir)
     batch_infer(qa, args.csv, args.output)
-
