@@ -10,6 +10,10 @@ from langchain.llms import HuggingFacePipeline
 from transformers import pipeline
 from langchain.embeddings import HuggingFaceEmbeddings
 
+from langchain.retrievers.document_compressors.cross_encoder_rerank import CrossEncoderReranker  # :contentReference[oaicite:0]{index=0}
+from langchain_community.cross_encoders.huggingface import HuggingFaceCrossEncoder  # :contentReference[oaicite:1]{index=1}
+from langchain.retrievers import ContextualCompressionRetriever
+
 
 def load_qa_chain(
     cache_dir: str,
@@ -26,33 +30,47 @@ def load_qa_chain(
     with open(docs_path, "rb") as f:
         docs = pickle.load(f)
 
+    # extract just the caption text
     pattern = re.compile(r"\[Image caption:\s*\{?(.*?)\}?\]", flags=re.DOTALL)
-    for i, doc in enumerate(docs):
-        m = re.search(pattern, doc.page_content)
+    for doc in docs:
+        m = pattern.search(doc.page_content)
         if m:
             doc.page_content = m.group(1)
         else:
-            print("[ERROR]=================================")
-            print(doc.page_content)
-            print(doc.metadata)
-            print("[ERROR]=================================")
-            exit(1)
+            raise ValueError(f"Caption parse failed for page: {doc.metadata}")
 
-    # for i, doc in enumerate(docs):
-    #     print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
-    #     print('doc.page_content:', doc.page_content)
-    #     print('doc.metadata:', doc.metadata)
-    #     print('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
-    # exit()
-
+    # embeddings + FAISS
     embeddings = HuggingFaceEmbeddings(
         model_name=embedding_model,
         model_kwargs={"device": "cuda"},
     )
     vectorstore = FAISS.load_local(index_dir, embeddings, allow_dangerous_deserialization=True)
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 1})
 
-    # load LLM pipeline
+    # 1) FAISS retrieves top‑10
+    faiss_retriever = vectorstore.as_retriever(
+        search_type="mmr",
+        search_kwargs={
+            "fetch_k": 20,
+            "k": 10,
+            "lambda_mult": 0.5
+        }
+    )
+
+    # 2) wrap your HF cross‑encoder
+    cross_encoder = HuggingFaceCrossEncoder(
+        model_name="cross-encoder/ms-marco-MiniLM-L-6-v2",
+        model_kwargs={"device": "cuda", "max_length": 512},
+    )
+
+    # 3) build the reranker compressor (return top‑1)
+    reranker = CrossEncoderReranker(model=cross_encoder, top_n=1)
+
+    # 4) two‑stage retriever: FAISS → cross‑encoder rerank
+    retriever = ContextualCompressionRetriever(
+        base_retriever=faiss_retriever,
+        base_compressor=reranker,
+    )
+    # LLM setup
     txt_pipe = pipeline(
         "text-generation",
         model=llm_model,
@@ -74,15 +92,13 @@ def load_qa_chain(
 
 def batch_infer(qa_chain: RetrievalQA, in_csv: str, out_csv: str):
     df = pd.read_csv(in_csv)
-    # expects columns "ID", "Question"
-    queries = [{"query": q} for q in df["Question"].tolist()]
+    queries = [{"query": q} for q in df["Question"]]
     results = qa_chain.apply(queries)
 
-    # collect pages
     out = []
     for idx, res in enumerate(results):
-        src_docs = res.get("source_documents", [])
-        page = src_docs[0].metadata.get("page_label") if src_docs else None
+        docs = res["source_documents"]
+        page = docs[0].metadata.get("page_label") if docs else None
         out.append({"ID": df.at[idx, "ID"], "Answer": page})
 
     pd.DataFrame(out).to_csv(out_csv, index=False)
@@ -91,22 +107,14 @@ def batch_infer(qa_chain: RetrievalQA, in_csv: str, out_csv: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Batch inference over cached RAG index")
-    parser.add_argument(
-        "--cache_dir",
-        help="Directory where preprocess.py stored its cache",
-        default="cache_dir"
-    )
-    parser.add_argument(
-        "--csv",
-        required=True,
-        help="Input CSV file with columns ID,Question"
-    )
-    parser.add_argument(
-        "--output",
-        help="Output CSV file (with columns ID,Answer)",
-        default="answers.csv"
-    )
+    parser.add_argument("--cache_dir", default="cache_dir",
+                        help="Directory where preprocess.py stored its cache")
+    parser.add_argument("--csv", required=True,
+                        help="Input CSV file with columns ID,Question")
+    parser.add_argument("--output", default="answers.csv",
+                        help="Output CSV file (with columns ID,Answer)")
     args = parser.parse_args()
 
     qa = load_qa_chain(args.cache_dir)
     batch_infer(qa, args.csv, args.output)
+
