@@ -1,6 +1,5 @@
-# inference.py
-
 import os
+import re
 import pickle
 import argparse
 import pandas as pd
@@ -26,6 +25,18 @@ def load_qa_chain(
     # load cached docs & vectorstore
     with open(docs_path, "rb") as f:
         docs = pickle.load(f)
+
+    pattern = re.compile(r"\[Image caption:\s*\{?(.*?)\}?\]", flags=re.DOTALL)
+    for i, doc in enumerate(docs):
+        m = re.search(pattern, doc.page_content)
+        if m:
+            doc.page_content = m.group(1)
+        else:
+            print("[ERROR]=================================")
+            print(doc.page_content)
+            print(doc.metadata)
+            print("[ERROR]=================================")
+            exit(1)
 
     # for i, doc in enumerate(docs):
     #     print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
@@ -99,4 +110,3 @@ if __name__ == "__main__":
 
     qa = load_qa_chain(args.cache_dir)
     batch_infer(qa, args.csv, args.output)
-
