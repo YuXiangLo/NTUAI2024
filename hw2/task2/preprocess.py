@@ -15,7 +15,8 @@ def preprocess_pdf(
     pdf_path: str,
     cache_dir: str,
     # embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2",
-    embedding_model: str = "hkunlp/instructor-large",
+    # embedding_model: str = "hkunlp/instructor-large",
+    embedding_model: str = "sentence-transformers/stsb-roberta-large",
     caption_model: str = "microsoft/Phi-4-multimodal-instruct",
     batch_size: int = 8,
 ):

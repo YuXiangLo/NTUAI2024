@@ -17,7 +17,10 @@ from langchain.retrievers import ContextualCompressionRetriever
 
 def load_qa_chain(
     cache_dir: str,
-    embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2",
+    # embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2",
+    # embedding_model: str = "hkunlp/instructor-large",
+    embedding_model: str = "sentence-transformers/stsb-roberta-large",
+    cross_encoder_model: str = "cross-encoder/stsb-roberta-large",
     llm_model: str = "microsoft/phi-2"
 ) -> RetrievalQA:
     docs_path = os.path.join(cache_dir, "cached_docs.pkl")
@@ -29,15 +32,6 @@ def load_qa_chain(
     # load cached docs & vectorstore
     with open(docs_path, "rb") as f:
         docs = pickle.load(f)
-
-    # extract just the caption text
-    pattern = re.compile(r"\[Image caption:\s*\{?(.*?)\}?\]", flags=re.DOTALL)
-    for doc in docs:
-        m = pattern.search(doc.page_content)
-        if m:
-            doc.page_content = m.group(1)
-        else:
-            raise ValueError(f"Caption parse failed for page: {doc.metadata}")
 
     # embeddings + FAISS
     embeddings = HuggingFaceEmbeddings(
@@ -51,7 +45,7 @@ def load_qa_chain(
 
     # 2) wrap your HF cross‑encoder
     cross_encoder = HuggingFaceCrossEncoder(
-        model_name="cross-encoder/ms-marco-MiniLM-L-6-v2",
+        model_name=cross_encoder_model,
         model_kwargs={"device": "cuda", "max_length": 512},
     )
 
