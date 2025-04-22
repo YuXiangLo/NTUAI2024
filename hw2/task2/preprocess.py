@@ -14,7 +14,8 @@ from langchain.vectorstores import FAISS
 def preprocess_pdf(
     pdf_path: str,
     cache_dir: str,
-    embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2",
+    # embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2",
+    embedding_model: str = "hkunlp/instructor-large",
     caption_model: str = "microsoft/Phi-4-multimodal-instruct",
     batch_size: int = 8,
 ):
@@ -96,7 +97,8 @@ def preprocess_pdf(
 
     # 4. Prepend captions to each Document
     for doc, cap in zip(docs, captions):
-        doc.page_content = f"[Image caption: {cap}]\n\n" + doc.page_content
+        # doc.page_content = f"[Image caption: {cap}]\n\n" + doc.page_content
+        doc.page_content = cap
 
     # 5. Embed & FAISS‐index
     embeddings = HuggingFaceEmbeddings(
