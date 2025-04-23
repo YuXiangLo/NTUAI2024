@@ -17,10 +17,11 @@ from langchain.retrievers import ContextualCompressionRetriever
 
 def load_qa_chain(
     cache_dir: str,
-    # embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2",
+    embedding_model: str = "sentence-transformers/all-MiniLM-L12-v2",
+    # embedding_model: str = "sentence-transformers/all-mpnet-base-v2",
     # embedding_model: str = "hkunlp/instructor-large",
-    embedding_model: str = "sentence-transformers/stsb-roberta-large",
-    cross_encoder_model: str = "cross-encoder/stsb-roberta-large",
+    # embedding_model: str = "sentence-transformers/stsb-roberta-large",
+    cross_encoder_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2",
     llm_model: str = "microsoft/phi-2"
 ) -> RetrievalQA:
     docs_path = os.path.join(cache_dir, "cached_docs.pkl")
