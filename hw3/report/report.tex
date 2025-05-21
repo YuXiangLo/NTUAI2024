@@ -20,7 +20,7 @@
 \usepackage{url}
 
 % Title information
-\title{NTU AI 2024–HW2 Report}
+\title{NTU AI 2024–HW1 Report}
 \author{B10902037 \quad Yu~Xiang~Luo}
 \date{}
 
@@ -63,9 +63,15 @@
 \item \textbf{Response \emph{without} RAG}
 
 \begin{itemize}[leftmargin=*]
-	\item Without external context the model hallucinates—for example, it incorrectly states that \textit{Yu Xiang Luo} earned a Ph.D.~from UC Berkeley.
-	\item Details are listed in [Fig 1].
+  \item Without external context the model hallucinates—for example, it incorrectly states that \textit{Yu Xiang Luo} earned a Ph.D.~from UC Berkeley.
 \end{itemize}
+
+\begin{figure}[hbt]
+  \centering
+  \caption{Model output generated \emph{without} retrieval‑augmented generation (RAG).}
+  \label{fig:no_rag}
+\end{figure}
+\FloatBarrier
 
 % -------------------------------------------------------------
 \item \textbf{Response \emph{with} RAG}
@@ -73,32 +79,19 @@
 \begin{enumerate}[label=(\alph*), leftmargin=*]
   \item \textbf{Method 1 — MMR‑selected chunks}: selects diverse, query‑relevant chunks obtained via MMR.
   \item \textbf{Method 2 — Whole‑resume context}: feeds the entire résumé into the model.
-  \item Details are listed in [Fig 2].
 \end{enumerate}
 
 \begin{itemize}[leftmargin=*]
-  \item Because my name appears at the top of the resume and can inflate similarity scores, it is removed before chunking.
+  \item Because my name appears at the top of the résumé and can inflate similarity scores, it is removed before chunking.
 \end{itemize}
-
-% -------------------------------------------------------------
-
-\begin{figure}[hbt]
-  \centering
-  \includegraphics[width=\linewidth]{wo_RAG}
-  \caption{Model output generated \emph{without} retrieval‑augmented generation (RAG).}
-  \label{fig:no_rag}
-\end{figure}
-\FloatBarrier
 
 \begin{figure}[hbt]
   \centering
   \begin{subfigure}[b]{0.48\linewidth}
-    \includegraphics[width=\linewidth]{w_RAG_MMR}
     \caption{(a) MMR‑filtered chunks}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.48\linewidth}
-    \includegraphics[width=\linewidth]{w_RAG_whole_resume}
     \caption{(b) Whole‑document context}
   \end{subfigure}
   \caption{Model responses after applying retrieval‑augmented generation.}
@@ -116,8 +109,6 @@
   \item \emph{Prompt tuning}: Prompt‑tuning alone does not substantially reduce hallucination without better context, while it limits output length and style well (e.g., "answer in two sentences").
   \item \emph{Token efficiency}: Method~1 processed \textbf{231 tokens} versus \textbf{622 tokens} for Method~2, a \textasciitilde63\,\% reduction in prompt length.
   \item \emph{Context‑size considerations}: In production scenarios, attaching every reference file may exceed the context window. In this homework, resumes are typically one page, so the entire document can be supplied without breaching the limit, allowing the model to form a full picture of the candidate.
-  \item \emph{Whole-page loading vs. chunked retrieval}: When the entire résumé is provided, the model can better understand my background in web development and related side projects—details often missed by MMR-based chunking, which tends to focus primarily on the Education and Experience sections.
-
 \end{itemize}
 
 % Optional numerical table
@@ -137,37 +128,6 @@
 \FloatBarrier
 
 \end{enumerate}
-
-% -------------------------------------------------------------
-
-\section*{Task 2}
-
-\begin{enumerate}[leftmargin=*]
-
-% -------------------------------------------------------------
-\item \textbf{Implementation}
-
-\begin{itemize}
-	\item To recognize the content in the slides \textit{AI.pdf}, I utilize two information retrieval model. They are:
-		\begin{itemize}
-			\item \texttt{OCR model PaddleOCR} from \texttt{paddleocr}
-			\item \texttt{Image Caption Model Phi-4} from \texttt{microsoft/Phi-4-multimodal-instruct}
-		\end{itemize}
-	\item The former model read the slide text, capturing the semantic information, and the latter one captured the graphic information.
-	\item After extracting slides information into text form, I use \texttt{intfloat/e5-large-v2} from \textit{Microsoft} to embed the texts and compute the cosine similarities between queries and our retrievals. 
-	\item By \texttt{torch.topk}, we pick some candidates and utilize \texttt{sentence\_transformers.CrossEncoder} to rate and return the best fit page.
-\end{itemize}
-
-\item \textbf{Issues \& Solutions}
-
-\begin{itemize}
-	\item At first, I used \texttt{PyPDFLoader} from \texttt{langchain} to retrieve the \textit{AI.pdf}, and yet it fails to split texts sometimes, which leads to a low accuracy. 
-	\item To solve the issue, I turn out to use \href{https://github.com/PaddlePaddle/PaddleOCR}{PaddleOCR}, which is a modern OCR and popular package.
-\end{itemize}
-
-% -------------------------------------------------------------
-
-\end {enumerate}
 
 \end{document}
 

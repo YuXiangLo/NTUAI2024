@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.15)  21 MAY 2025 16:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.15)  21 MAY 2025 16:32
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**report.tex
-(./report.tex
+**../../hw2/report/report.tex
+(../../hw2/report/report.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -416,61 +416,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--58
 
 LaTeX Warning: \verb may be unreliable inside tabularx on input line 58.
 
-<./images/wo_RAG.png, id=9, 2884.7775pt x 1626.075pt>
-File: ./images/wo_RAG.png Graphic file (type png)
-<use ./images/wo_RAG.png>
-Package pdftex.def Info: ./images/wo_RAG.png  used on input line 87.
-(pdftex.def)             Requested size: 469.75502pt x 264.76752pt.
-[1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<./images/w_RAG_MMR.png, id=37, 2352.79pt x 967.615pt>
-File: ./images/w_RAG_MMR.png Graphic file (type png)
-<use ./images/w_RAG_MMR.png>
-Package pdftex.def Info: ./images/w_RAG_MMR.png  used on input line 96.
-(pdftex.def)             Requested size: 225.4804pt x 92.72166pt.
-<./images/w_RAG_whole_resume.png, id=38, 2368.85pt x 1963.335pt>
-File: ./images/w_RAG_whole_resume.png Graphic file (type png)
-<use ./images/w_RAG_whole_resume.png>
-Package pdftex.def Info: ./images/w_RAG_whole_resume.png  used on input line 10
-1.
-(pdftex.def)             Requested size: 225.4804pt x 186.87825pt.
+! LaTeX Error: File `wo_RAG' not found.
 
-[2 <./images/wo_RAG.png> <./images/w_RAG_MMR.png> <./images/w_RAG_whole_resume.
-png>] [3] (./report.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
- ***********
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71   \includegraphics[width=\linewidth]{wo_RAG}
+                                                 
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.71   \includegraphics[width=\linewidth]{wo_RAG}
+                                                 
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ 
 Here is how much of TeX's memory you used:
- 11438 strings out of 474116
- 184346 string characters out of 5743682
- 1942187 words of memory out of 5000000
- 33658 multiletter control sequences out of 15000+600000
- 563692 words of font info for 55 fonts, out of 8000000 for 9000
+ 11386 strings out of 474116
+ 183309 string characters out of 5743682
+ 1931187 words of memory out of 5000000
+ 33629 multiletter control sequences out of 15000+600000
+ 563393 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,473b,707s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
-cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
-/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
-xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
-live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
-ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texliv
-e/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on report.pdf (3 pages, 1283606 bytes).
-PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 75i,15n,79p,320b,533s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
