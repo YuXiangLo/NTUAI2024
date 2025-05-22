@@ -59,7 +59,6 @@ def build_agent(name, msg):
 
 SCORE_KEYWORDS_STR = str(SCORE_KEYWORDS)
 
-# 'Return JSON {"call":"fetch_restaurant_data","args":{"restaurant_name":"<name>"}}'
 DATA_FETCH = build_agent(
     "fetch_agent",
     '''
@@ -109,7 +108,6 @@ ENTRY = build_agent("entry",
     "You are the Entry Point Agent"
 )
 
-# register functions
 register_function(
     fetch_restaurant_data,
     caller=DATA_FETCH,

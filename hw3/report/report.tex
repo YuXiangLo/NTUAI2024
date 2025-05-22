@@ -20,7 +20,7 @@
 \usepackage{url}
 
 % Title information
-\title{NTU AI 2024–HW1 Report}
+\title{NTU AI 2024–HW3 Report}
 \author{B10902037 \quad Yu~Xiang~Luo}
 \date{}
 
@@ -28,106 +28,83 @@
 
 \maketitle
 
-\textbf{\textit{\textcolor{red}{Details can be found:}}}~\href{https://github.com/YuXiangLo/NTUAI2024}{\texttt{GitHub Repository}}
+\[ 
+  \textbf{\textit{\textcolor{red}{Details can be found:}}}~\href{https://github.com/YuXiangLo/NTUAI2024}{\texttt{GitHub Repository}}
+\]
 
-\section*{Task 1}
+\begin{center}
+    \textbf{\textit{\textcolor{red}{Disclaimer:}}} I discussed this homework with \textit{Hao Wei Yei (R13922173)}, so some similarities may exist.
+\end{center}
 
-\begin{enumerate}[leftmargin=*]
 
-% -------------------------------------------------------------
-\item \textbf{Implementation Overview}
+%--------------------------------------------------
+\section*{Agents Setup}
+\label{sec:workflow}
 
-\begin{table}[hbt]
-  \centering
-  \caption{Key components employed in Task 1.}
-  \label{tab:components}
-  \begin{tabularx}{0.93\linewidth}{@{}p{0.22\linewidth}X@{}}
-    \toprule
-    \textbf{Category} & \textbf{Component \& Purpose}\\
-    \midrule
-    Model &
-      \texttt{pipeline(type, model, tokenizer)} – load model and tokenizer\\
-      & \texttt{HuggingFacePipeline(pipeline)} – wrap the pipeline for inference\\[3pt]
-    Retrieval &
-      \texttt{PyPDFLoader} – read PDF documents\\
-      & \texttt{RecursiveCharacterTextSplitter(chunk\_size, chunk\_overlap)} – split text\\
-      & \texttt{split\_documents(pages)} – generate chunks\\
-      & \verb|re.sub('Yu Xiang Luo', '', page.page_content)| – remove name to avoid bias\\
-      & \textbf{Maximal Marginal Relevance (MMR)} – select relevant yet diverse chunks\footnotemark\\
-    \bottomrule
-  \end{tabularx}
-\end{table}
-\footnotetext{\url{https://www.kaggle.com/code/marcinrutecki/rag-mmr-search-in-langchain}}
-
-% -------------------------------------------------------------
-\item \textbf{Response \emph{without} RAG}
-
-\begin{itemize}[leftmargin=*]
-  \item Without external context the model hallucinates—for example, it incorrectly states that \textit{Yu Xiang Luo} earned a Ph.D.~from UC Berkeley.
+\begin{itemize}
+  \item For this homework, I modified the original setup by integrating the \textcolor{blue}{\textit{Review Analysis Agent}} and the \textcolor{blue}{\textit{Scoring Agent}}. I also utilized regular expressions (regex) to extract all individual scores returned from \textit{\textcolor{blue}{Review Analysis and Scoring Agent}}, and compute the overall score.
+  \item This optimized setup improves upon the initial design by reducing the likelihood of hallucinations from the Scoring Agent, as it no longer needs to reference the full context when assigning scores.
 \end{itemize}
 
-\begin{figure}[hbt]
+% Example figure
+\begin{figure}[h!]
   \centering
-  \caption{Model output generated \emph{without} retrieval‑augmented generation (RAG).}
-  \label{fig:no_rag}
+  \includegraphics[width=0.8\textwidth]{workflow_diagram.png}
+  \caption{Optimized Agents Workflow}
+  \label{fig:workflow}
 \end{figure}
-\FloatBarrier
+\newpage
 
-% -------------------------------------------------------------
-\item \textbf{Response \emph{with} RAG}
-
-\begin{enumerate}[label=(\alph*), leftmargin=*]
-  \item \textbf{Method 1 — MMR‑selected chunks}: selects diverse, query‑relevant chunks obtained via MMR.
-  \item \textbf{Method 2 — Whole‑resume context}: feeds the entire résumé into the model.
-\end{enumerate}
-
-\begin{itemize}[leftmargin=*]
-  \item Because my name appears at the top of the résumé and can inflate similarity scores, it is removed before chunking.
+%--------------------------------------------------
+\section*{Prompt Design}
+\label{sec:prompt}
+\begin{itemize}
+  \item I discussed the prompt with \textit{Hao Wei Yei} before passing all public test cases; our prompts may therefore be similar.
+  \item We originally used the three-agent setup with detailed, step-by-step instructions. Although this method retrieved and scored in a expected way, it failed to show its robustness in multiple rounds.
+  \item Runtime logs showed that during review analysis the agent sometimes fetched incomplete reviews, causing scoring errors.
+  \item To fix this, we dropped the step-by-step output—likely overloading the attention mechanism—and now score each review immediately after retrieval, so each score relies only on the most recent sentence.
 \end{itemize}
 
-\begin{figure}[hbt]
-  \centering
-  \begin{subfigure}[b]{0.48\linewidth}
-    \caption{(a) MMR‑filtered chunks}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[b]{0.48\linewidth}
-    \caption{(b) Whole‑document context}
-  \end{subfigure}
-  \caption{Model responses after applying retrieval‑augmented generation.}
-  \label{fig:rag}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{old_design.png}
+    \caption{Original three agents workflow}
+    \label{fig:image1}
 \end{figure}
-\FloatBarrier
 
-% -------------------------------------------------------------
-\item \textbf{Analysis}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{new_design.png}
+    \caption{Our two agents workflow}
+    \label{fig:image2}
+\end{figure}
+%--------------------------------------------------
+\section*{Case Analysis: Success and Failure}
+\label{sec:cases}
+% Compare examples where the model succeeded versus failed.
 
-\begin{itemize}[leftmargin=*]
-  \item \emph{Without RAG}: the LLM relies exclusively on pre‑training knowledge and thus hallucinates.
-  \item \emph{With RAG}: supplying context (Resume Information) curbs hallucination; Method 2 yields the most complete answer, whereas Method 1 is more token‑efficient.
-  \item \emph{Retrieval‑granularity trade‑off}: Chunk size and overlap affect the balance between capturing detailed context (granularity) and retrieving diverse, relevant information (retrieval effectiveness). Well chosen overlap unsures continuity of context and and balanced representation without duplication. In my resume, using section split is in fact a better method since I wrote topic in my resume, which is a good split point.
-  \item \emph{Prompt tuning}: Prompt‑tuning alone does not substantially reduce hallucination without better context, while it limits output length and style well (e.g., "answer in two sentences").
-  \item \emph{Token efficiency}: Method~1 processed \textbf{231 tokens} versus \textbf{622 tokens} for Method~2, a \textasciitilde63\,\% reduction in prompt length.
-  \item \emph{Context‑size considerations}: In production scenarios, attaching every reference file may exceed the context window. In this homework, resumes are typically one page, so the entire document can be supplied without breaching the limit, allowing the model to form a full picture of the candidate.
+\subsection*{Success Cases}
+% Provide examples and discuss why they were successful.
+\begin{itemize}
+  \item Example 1: Description and analysis
+  \item Example 2: Description and analysis
 \end{itemize}
 
-% Optional numerical table
-\begin{table}[hbt]
-  \centering
-  \caption{Prompt token usage for each retrieval strategy.}
-  \label{tab:tokens}
-  \begin{tabular}{@{}lcc@{}}
-    \toprule
-    \textbf{Method} & \textbf{Tokens} & \textbf{Relative cost}\\
-    \midrule
-    Whole‑resume & 622 & 1.00\\
-    MMR chunks & 231 & 0.37\\
-    \bottomrule
-  \end{tabular}
-\end{table}
-\FloatBarrier
+\subsection*{Failure Cases}
+% Provide examples where the model did not perform as expected.
+Discuss potential causes of failures.
+\begin{itemize}
+  \item Example 1: Description and error analysis
+  \item Example 2: Description and error analysis
+\end{itemize}
 
-\end{enumerate}
+%--------------------------------------------------
+\section*{Conclusion and Key Modifications}
+\label{sec:conclusion}
+% Summarize lessons learned and outline modifications.
+Conclude with the main takeaways and describe any changes you plan to implement to improve performance.
+
+%--------------------------------------------------
 
 \end{document}
 
