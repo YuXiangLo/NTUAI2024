@@ -43,7 +43,7 @@
 
 \begin{itemize}
   \item For this homework, I modified the original setup by integrating the \textcolor{blue}{\textit{Review Analysis Agent}} and the \textcolor{blue}{\textit{Scoring Agent}}. I also utilized regular expressions (regex) to extract all individual scores returned from \textit{\textcolor{blue}{Review Analysis and Scoring Agent}}, and compute the overall score.
-  \item This optimized setup improves upon the initial design by reducing the likelihood of hallucinations from the Scoring Agent, as it no longer needs to reference the full context when assigning scores.
+  \item This optimized setup improves upon the initial design by reducing the likelihood of mis-evaluating from the Scoring Agent, as it no longer needs to reference the full context when assigning scores.
 \end{itemize}
 
 % Example figure
@@ -53,16 +53,19 @@
   \caption{Optimized Agents Workflow}
   \label{fig:workflow}
 \end{figure}
-\newpage
+%\newpage
 
 %--------------------------------------------------
 \section*{Prompt Design}
 \label{sec:prompt}
 \begin{itemize}
-  \item I discussed the prompt with \textit{Hao Wei Yei} before passing all public test cases; our prompts may therefore be similar.
-  \item We originally used the three-agent setup with detailed, step-by-step instructions. Although this method retrieved and scored in a expected way, it failed to show its robustness in multiple rounds.
-  \item Runtime logs showed that during review analysis the agent sometimes fetched incomplete reviews, causing scoring errors.
-  \item To fix this, we dropped the step-by-step output—likely overloading the attention mechanism—and now score each review immediately after retrieval, so each score relies only on the most recent sentence.
+\item I discussed the prompt with \textit{Hao Wei Yei} before passing all public test cases; therefore, our prompts may be similar.
+\item We originally employed a three‑agent setup with detailed, step‑by‑step instructions. Although this approach retrieved and evaluated scores as expected, it did not demonstrate robustness across multiple rounds.
+\item Runtime logs showed that, during review analysis, the agent sometimes fetched incomplete reviews, which led to scoring errors.
+\item To address this issue, we removed the step‑by‑step output—likely overloading the attention mechanism—and instead evaluated each review immediately after retrieval, so each score depends only on the most recent sentence.
+    \begin{itemize}
+      \item \textbf{ex}: \textit{The food at McDonald's was average, but the customer service was unpleasant. [food\_score: 3, customer\_service\_score: 2]}
+    \end{itemize}
 \end{itemize}
 
 \begin{figure}[h!]
@@ -78,31 +81,69 @@
     \caption{Our two agents workflow}
     \label{fig:image2}
 \end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{analyze_score_prompt.png}
+    \caption{Our analyze-score agent prompt}
+    \label{fig:image2}
+\end{figure}
 %--------------------------------------------------
 \section*{Case Analysis: Success and Failure}
 \label{sec:cases}
-% Compare examples where the model succeeded versus failed.
+
+\begin{itemize}
+	\item To analyze our generations, we define the cases \textcolor{green}{\textbf{successful}} if the agent repeated the review identically and writed the scores pair in assigned format.
+\end{itemize}
 
 \subsection*{Success Cases}
-% Provide examples and discuss why they were successful.
 \begin{itemize}
-  \item Example 1: Description and analysis
-  \item Example 2: Description and analysis
+  \item Example 1: Complete minimal requirements
+    \begin{itemize}
+		\item \textit{The food at McDonald's was forgettable, but the customer service was not great. [food\_score: 3, customer\_service\_score: 2]}
+	\end{itemize}
+  \item Example 2: Complete minimal requirements and apply easy chain of thoughts based on the instructions
+    \begin{itemize}
+		\item \textit{In-n-Out burgers are tasty, always fresh and delicious. The customer service is equally enjoyable, with efficient and friendly staff even during busy times.} \\
+			\textit{* Keyword for food: tasty, Keyword for service: enjoyable} \\
+			\textit{* [food\_score: 5, customer\_service\_score: 4]}
+	\end{itemize}
 \end{itemize}
 
 \subsection*{Failure Cases}
-% Provide examples where the model did not perform as expected.
-Discuss potential causes of failures.
 \begin{itemize}
-  \item Example 1: Description and error analysis
-  \item Example 2: Description and error analysis
+  \item Example 1: Incomplete requirements (repeat review)
+    \begin{itemize}
+		\item \textit{The food at McDonald's was meh, but nothing special. [food\_score: 3, customer\_service\_score: 2]}
+	\end{itemize}
 \end{itemize}
+%\newpage
 
 %--------------------------------------------------
 \section*{Conclusion and Key Modifications}
 \label{sec:conclusion}
-% Summarize lessons learned and outline modifications.
-Conclude with the main takeaways and describe any changes you plan to implement to improve performance.
+
+In conclusion, we first applied a $fetch \rightarrow analyze \rightarrow score$ agent workflow and designed detailed step‑by‑step instructions to guide the model. This method did not perform well because the lengthy context strained the model's memory. To resolve this, we merged the analysis and scoring steps so the agent evaluates each review immediately after repeating it, thereby easing the memory load—each score now depends only on the repeated review rather than long‑term context.\\
+
+Furthermore, because each score is printed directly after the repeated review, we needed a reliable way to extract the values and compute an overall score. We therefore required the agent to return the score pair in a strict format, which greatly improved evaluation accuracy.\\
+
+We also noticed that, even with instructions specifying that terms such as \emph{meh}, \emph{uninspiring}, and \emph{forgettable} correspond to a score of 3, the agent often rated them as 2. To mitigate this, we added a \textit{**NOTICE**} line highlighting that these descriptors are neutral and deserve three points.\\
+
+Lastly, we experimented with a small chain‑of‑thought structure that prompts the agent to identify key descriptive words before assigning scores. Although the model followed this approach inconsistently, generations that did so tended to achieve a lower MAE.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{public_test_pass.png}
+  \caption{Screentshot of our agent passing all cases}
+  \label{fig:workflow}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{regex.png}
+  \caption{Extraction snippet}
+  \label{fig:workflow}
+\end{figure}
 
 %--------------------------------------------------
 
