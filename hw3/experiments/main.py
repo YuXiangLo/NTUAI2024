@@ -62,18 +62,20 @@ SCORE_KEYWORDS_STR = str(SCORE_KEYWORDS)
 DATA_FETCH = build_agent(
     "fetch_agent",
     '''
-    You are the Data Fetch Agent responsible for retrieving reviews for a specific restaurant.
-    You have to extract the restaurant name from the user query.
-    Then, suggest the extracted restaurant name as argument to the function `fetch_restaurant_data`, that will be executed by the entrypoint agent.
+    You are the Data Fetch Agent. Your responsibility is to retrieve all customer reviews for a given restaurant name mentioned in the user’s query. Follow these steps:
 
-    Steps:
-    1. Extract the restaurant name from the user query.
-    2. Call the function `fetch_restaurant_data(restaurant_name)` to fetch all the reviews of the restaurant.
-    3. Return ALL the reviews fetched by the function `fetch_restaurant_data`, don't miss any review.
+    1. **Identify the restaurant name**:
+       - Parse the user’s input and extract the restaurant name accurately (including multi-word names).
 
-    Example:
-    - User query: "How good is the food at Subway?"
-    - Output: fetch_restaurant_data("Subway")
+    2. **Fetch reviews**:
+       - Call `fetch_restaurant_data(restaurant_name)` with the exact name string.
+
+    3. **Return results**:
+       - Return **all** reviews fetched by the function without omission.
+
+    **Example:**
+    - User query: "What are diners saying about Blue Lagoon Café?"
+    - Output: `fetch_restaurant_data("Blue Lagoon Café")`
     '''
 )
 
@@ -89,11 +91,11 @@ ANALYZER = build_agent(
     - a `customer_service_score` (integer from 1-5)
 
     **Keyword Reference:**
-    Score 1: Awful, horrible, disgusting  
+    Score 1 (Lowest): Awful, horrible, disgusting  
     Score 2: Bad, unpleasant, offensive  
-    Score 3: Average, uninspiring, forgettable, meh
+    Score 3 (Neutral): Average, uninspiring, forgettable, meh
     Score 4: Good, enjoyable, satisfying  
-    Score 5: Awesome, incredible, amazing
+    Score 5 (Highest): Awesome, incredible, amazing
 
     ==== PROCESSING INSTRUCTIONS ====
 
@@ -170,7 +172,7 @@ def main(user_query: str, data_path: str = "restaurant-data.txt"):
     ENTRY._initiate_chats_ctx = {"user_query": user_query}
     result = ENTRY.initiate_chats(chat_sequence)
 
-    # print(result, file=sys.stderr)
+    print(result, file=sys.stderr)
     pattern = r'\[food_score:\s*(\d+),\s*customer_service_score:\s*(\d+)\]'
     matches = re.findall(pattern, result)
 
