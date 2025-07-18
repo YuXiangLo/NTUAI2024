@@ -11,21 +11,21 @@ class TerminalColors:
     RESET = '\033[0m'
 
 
-def get_pyautogen_version() -> Tuple[bool, str]:
+def get_ag2_version() -> Tuple[bool, str]:
     """Return (is_installed, version)."""
     try:
         try:
             from importlib.metadata import version, PackageNotFoundError
         except ImportError:  # For Python < 3.8
             from importlib_metadata import version, PackageNotFoundError
-        return True, version("pyautogen")
+        return True, version("ag2")
     except PackageNotFoundError:
         return False, ""
 
 
-def check_pyautogen_version(expected: str = "0.9.0") -> bool:
-    """Check if pyautogen is installed and matches the expected version."""
-    present, ver = get_pyautogen_version()
+def check_ag2_version(expected: str = "0.9.0") -> bool:
+    """Check if ag2 is installed and matches the expected version."""
+    present, ver = get_ag2_version()
     if not present:
         print(f"{TerminalColors.RED}[X] Test 0 Failed. Pyautogen missing.{TerminalColors.RESET}")
         return False
@@ -33,7 +33,7 @@ def check_pyautogen_version(expected: str = "0.9.0") -> bool:
         print(f"{TerminalColors.GREEN}[V] Test 0 Passed. Pyautogen {ver}{TerminalColors.RESET}")
         return True
     print(
-        f"{TerminalColors.RED}pyautogen version mismatch — installed: {ver} expected: {expected}{TerminalColors.RESET}"
+        f"{TerminalColors.RED}ag2 version mismatch — installed: {ver} expected: {expected}{TerminalColors.RESET}"
     )
     return False
 
@@ -132,5 +132,5 @@ def public_tests() -> None:
 
 
 if __name__ == "__main__":
-    check_pyautogen_version("0.9.0")
+    check_ag2_version("0.9.0")
     public_tests()
